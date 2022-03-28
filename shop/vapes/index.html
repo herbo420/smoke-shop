@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <script type="text/javascript">
+        document.documentElement.className = 'js';
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style id="et-divi-open-sans-inline-css">
+        /* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}
+    </style>
+
+    <style type="text/css">
+        .heateor_sss_button_instagram span.heateor_sss_svg,a.heateor_sss_instagram span.heateor_sss_svg{background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}
+        .heateor_sss_horizontal_sharing .heateor_sss_svg,.heateor_sss_standard_follow_icons_container .heateor_sss_svg{
+            color: #fff;
+            border-width: 0px;
+            border-style: solid;
+            border-color: transparent;
+        }
+        .heateor_sss_horizontal_sharing .heateorSssTCBackground{
+            color:#666;
+        }
+        .heateor_sss_horizontal_sharing span.heateor_sss_svg:hover,.heateor_sss_standard_follow_icons_container span.heateor_sss_svg:hover{
+            border-color: transparent;
+        }
+        .heateor_sss_vertical_sharing span.heateor_sss_svg,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg{
+            color: #fff;
+            border-width: 0px;
+            border-style: solid;
+            border-color: transparent;
+        }
+        .heateor_sss_vertical_sharing .heateorSssTCBackground{
+            color:#666;
+        }
+        .heateor_sss_vertical_sharing span.heateor_sss_svg:hover,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg:hover{
+            border-color: transparent;
+        }
+        @media screen and (max-width:783px) {.heateor_sss_vertical_sharing{display:none!important}}div.heateor_sss_sharing_title{text-align:center}div.heateor_sss_sharing_ul{width:100%;text-align:center;}div.heateor_sss_horizontal_sharing div.heateor_sss_sharing_ul a{float:none!important;display:inline-block;}
+    </style>
+
+    <!-- custom css -->
+    <link rel='stylesheet'  href='https://www.herbalist.ml/css/custom.css?v6' type='text/css' media='all' />
+    <!-- custom css -->
+
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+    <script type="text/javascript">
+        let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};
+    </script>
+
+    <!-- This site is optimized with the Yoast SEO Premium plugin v17.7 (Yoast SEO v17.7.1) - https://yoast.com/wordpress/plugins/seo/ -->
+    <title>Herbalist Smoke Shop: Vaporizadores Herbales</title>
+    <meta name="description" content="Compre los mejores vaporizadores de marihuana para cannabis y hierbas secas. Tenemos las mejores marcas y vaporizadores de la más alta tecnología, vaporizadores portátiles." />
+    <link rel="canonical" href="https://www.herbalist.ml/shop/vapes/" />
+    <meta property="og:locale" content="es_CR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Herbalist Smoke Shop: Vaporizadores Herbales" />
+    <meta property="og:description" content="Compre los mejores vaporizadores de marihuana para cannabis y hierbas secas. Tenemos las mejores marcas y vaporizadores de la más alta tecnología, vaporizadores portátiles." />
+    <meta property="og:url" content="https://www.herbalist.ml/shop/vapes/" />
+    <meta property="og:site_name" content="Herbalist" />
+    <meta property="article:modified_time" content="2021-12-07T23:49:47+00:00" />
+    <meta property="og:image" content="https://www.herbalist.ml/img/embarc_vape_banner.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="865" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:label1" content="Est. reading time" />
+    <meta name="twitter:data1" content="27 minutes" />
+
+    <!-- / Yoast SEO Premium plugin. -->
+
+    <meta content="Divi Child v.1.0.0" name="generator"/>
+
+    <style id='age-gate-user-options-inline-css' type='text/css'>
+        :root{--age-gate-blur: 5px;}.age-gate-wrapper { background: transparent; }.age-gate-background-colour { background-color: rgba(255, 255, 255, 1); }.age-gate-wrapper { background: transparent; }.age-gate-background { background-image: url(https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/age-bg.png?strip=all&lossy=1&ssl=1); opacity: 1; background-position: center center; }.age-gate-error { display: none; }
+    </style>
+
+<link rel='stylesheet' id='megamenu-css'  href='https://www.herbalist.ml/wp-content/uploads/maxmegamenu/style.css?ver=fc55b4' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://www.herbalist.ml/wp-includes/css/dashicons.min.css?ver=5.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-parent-css'  href='https://www.herbalist.ml/wp-content/themes/Divi/style-static.min.css?ver=4.14.2' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-slider-css'  href='https://www.herbalist.ml/wp-content/themes/divi-child/owl.carousel.min.css?m=1638533474' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css'  href='https://www.herbalist.ml/wp-content/themes/divi-child/style.css?ver=4.14.2' type='text/css' media='all' />
+
+    <link rel='shortlink' href='https://www.herbalist.ml/shop/vapes/' />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <noscript>
+        <style>.lazyload[data-src]{display:none !important;}</style>
+    </noscript>
+
+    <style>
+        .lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBN618D1GP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EBN618D1GP');
+    </script>
+
+    <link rel="icon" type="image/png" href="https://www.herbalist.ml/img/ico.png" />
+
+    <link rel="stylesheet" id="et-core-unified-tb-12-tb-31-2-cached-inline-styles" href="https://www.herbalist.ml/wp-content/et-cache/2/et-core-unified-tb-12-tb-31-2.min.css?ver=1638921006" />
+    <link rel="stylesheet" id="et-core-unified-2-cached-inline-styles" href="https://www.herbalist.ml/css/products/et-core-unified-2.min.css?v2" />
+    <style type="text/css">/** Mega Menu CSS: fs **/</style>
+</head>
+
+
+<body class="home page-template-default page page-id-2 et-tb-has-template et-tb-has-header et-tb-has-footer mega-menu-max-mega-menu-1 mega-menu-secondary-menu mega-menu-primary-menu et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
+
+
+
+
+
+<script data-cfasync="false">var ewww_webp_supported=false;</script>
+<div id="page-container">
+    <div id="et-boc" class="et-boc">
+
+        <header class="et-l et-l--header">
+            <div class="et_builder_inner_content et_pb_gutters3">
+                <div class="et_pb_section et_pb_section_1_tb_header et_pb_with_background et_section_regular" >
+
+                    <div class="et_pb_row et_pb_row_0_tb_header">
+                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                            <div class="et_pb_module et_pb_text et_pb_text_0_tb_header et_clickable  et_pb_text_align_center et_pb_bg_layout_light">
+                                <div class="et_pb_text_inner"><p>ENVÍO GRATIS 24/7 🇨🇷</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="et_pb_section et_pb_section_3_tb_header header-bar et_pb_with_background et_section_regular">
+
+                    <div class="et_pb_row et_pb_row_1_tb_header">
+                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_1_tb_header  et_pb_css_mix_blend_mode_passthrough">
+
+                            <div class="et_pb_module et_pb_code et_pb_code_0_tb_header  et_pb_text_align_left">
+
+
+                                <div class="et_pb_code_inner">
+
+                                    <div id="mega-menu-wrap-primary-menu" class="mega-menu-wrap">
+                                        <div class="mega-menu-toggle">
+                                            <div class="mega-toggle-blocks-left">
+
+                                            </div>
+
+                                            <div class="mega-toggle-blocks-center">
+
+                                            </div>
+
+                                            <div class="mega-toggle-blocks-right">
+                                                <div class='mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0' id='mega-toggle-block-0'>
+                                                    <button aria-label="Toggle Menu" class="mega-toggle-animated mega-toggle-animated-slider" type="button" aria-expanded="false">
+                  <span class="mega-toggle-animated-box">
+                    <span class="mega-toggle-animated-inner"></span>
+                  </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                 <!-- MENU DESKTOP -->
+                                 <ul id="mega-menu-primary-menu" class="mega-menu max-mega-menu mega-menu-horizontal" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="0" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="768" data-unbind="true" data-mobile-state="collapse_all" data-hover-intent-timeout="300" data-hover-intent-interval="100">
+                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-139" id="mega-menu-item-139">
+                                        <a class="mega-menu-link" href="https://www.herbalist.ml/shop/bongs/" tabindex="0">Bongs</a>
+                                    </li>
+                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-1859" id="mega-menu-item-1859">
+                                        <a class="mega-menu-link" href="https://www.herbalist.ml/shop/pipas/" tabindex="0">Pipas</a>
+                                    </li>
+                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-611" id="mega-menu-item-611">
+                                        <a class="mega-menu-link" href="https://www.herbalist.ml/shop/vapes/" tabindex="0">Vapes</a>
+                                    </li>
+                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-611" id="mega-menu-item-611">
+                                        <a class="mega-menu-link" href="https://www.herbalist.ml/shop/accesorios/" tabindex="0">Accesorios</a>
+                                    </li>
+                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-611" id="mega-menu-item-611">
+                                        <a class="mega-menu-link" href="https://www.herbalist.ml/cultivation/" tabindex="0">Cultivo</a>
+                                    </li>
+                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-611" id="mega-menu-item-611">
+                                        <a class="mega-menu-link" href="https://www.herbalist.ml/cbd/" tabindex="0">CBD</a>
+                                    </li>
+                                </ul>
+                                <!-- MENU DESKTOP -->
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode_passthrough">
+
+
+                            <div class="et_pb_module et_pb_image et_pb_image_0_tb_header">
+                                <a href="https://www.herbalist.ml/">
+                                    <span class="et_pb_image_wrap ">
+                                        <img src="https://www.herbalist.ml/img/herbalist-logo.jpg" alt="herbalist smoke shop logo" title="logo" class="wp-image-16" />
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_3_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                            <div class="et_pb_module et_pb_code et_pb_code_1_tb_header">
+
+
+                                <div class="et_pb_code_inner">
+                                    <div id="mega-menu-wrap-secondary-menu" class="mega-menu-wrap">
+                                        <div class="mega-menu-toggle">
+                                            <div class="mega-toggle-blocks-left"></div>
+                                            <div class="mega-toggle-blocks-center"></div>
+                                            <div class="mega-toggle-blocks-right">
+                                                <div class='mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0' id='mega-toggle-block-0'>
+                                                    <button aria-label="Toggle Menu" class="mega-toggle-animated mega-toggle-animated-slider" type="button" aria-expanded="false">
+                  <span class="mega-toggle-animated-box">
+                    <span class="mega-toggle-animated-inner"></span>
+                  </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <ul id="mega-menu-secondary-menu" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="0" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="768" data-unbind="true" data-mobile-state="collapse_all" data-hover-intent-timeout="300" data-hover-intent-interval="100">
+                                            <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-1858' id='mega-menu-item-1858'>
+                                                <a class="mega-menu-link" target="_blank" href="https://wa.me/50662609063/?text=Por favor escríba aquí su consulta:)" tabindex="0"> <i class="fab fa-whatsapp sap-icon"></i> </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="et_pb_row et_pb_row_2_tb_header">
+
+
+                        <!-- menu btn -->
+                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_4_tb_header  et_pb_css_mix_blend_mode_passthrough">
+                            <div id="slide-in-open" class="et_pb_module et_pb_text et_pb_text_1_tb_header  et_pb_text_align_left et_pb_bg_layout_light">
+                                <div class="et_pb_text_inner">
+                                    <span class="line line-1"></span><br />
+                                    <span class="line line-2"></span><br />
+                                    <span class="line line-3"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- menu btn -->
+
+                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_5_tb_header  et_pb_css_mix_blend_mode_passthrough">
+
+                            <div class="et_pb_module et_pb_image et_pb_image_1_tb_header">
+
+                                <a href="https://www.herbalist.ml/">
+                                    <span class="et_pb_image_wrap ">
+                                        <img src="https://www.herbalist.ml/img/herbalist-logo.jpg?v57" alt="" title="logo" class="wp-image-16" />
+                                    </span>
+                                </a>
+
+                            </div>
+                        </div>
+
+
+                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_6_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                            <div class="et_pb_button_module_wrapper et_pb_button_0_tb_header_wrapper et_pb_button_alignment_right et_pb_module ">
+                                <a id="slide-in-open-shop" class="et_pb_button et_pb_button_0_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/shop/">Comprar</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="et_pb_section et_pb_section_7_tb_header slide-in-menu-container header-bar et_section_regular" >
+
+                 <!-- MENU MOBILE -->
+                 <div class="et_pb_row et_pb_row_4_tb_header">
+                    <div class="et_pb_column et_pb_column_4_4 et_pb_column_8_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+                        <div class="et_pb_button_module_wrapper et_pb_button_8_tb_header_wrapper  et_pb_module ">
+                            <a class="et_pb_button et_pb_button_8_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/cbd/">CBD</a>
+                        </div>
+
+                        <div class="et_pb_button_module_wrapper et_pb_button_8_tb_header_wrapper  et_pb_module ">
+                            <a class="et_pb_button et_pb_button_8_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/cultivation/">Cultivo</a>
+                        </div>
+
+                        <div class="et_pb_button_module_wrapper et_pb_button_8_tb_header_wrapper  et_pb_module ">
+                            <a class="et_pb_button et_pb_button_8_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/shop/bongs/">Bongs</a>
+                        </div>
+
+                        <div class="et_pb_button_module_wrapper et_pb_button_9_tb_header_wrapper  et_pb_module ">
+                            <a class="et_pb_button et_pb_button_9_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/shop/pipas/">Pipas</a>
+                        </div>
+
+                        <div class="et_pb_button_module_wrapper et_pb_button_9_tb_header_wrapper  et_pb_module ">
+                            <a class="et_pb_button et_pb_button_9_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/shop/vapes/">Vapes</a>
+                        </div>
+
+                        <div class="et_pb_button_module_wrapper et_pb_button_11_tb_header_wrapper  et_pb_module ">
+                            <a class="et_pb_button et_pb_button_11_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/shop/accesorios/">Accesorios</a>
+                        </div>
+
+                        <div class="et_pb_module et_pb_image et_pb_image_2_tb_header inline-block">
+                            <a href="https://wa.me/50662609063/?text=" target="_blank" style="color: black !important;">
+                                <i class="fab fa-whatsapp sap-icon"></i>
+                            </a>
+                        </div>
+
+                        <!--<div class="et_pb_module et_pb_image et_pb_image_2_tb_header inline-block">
+                            <a href="https://www.tiktok.com/@herbalist" target="_blank"><span class="et_pb_image_wrap "><img src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/tik.svg" alt="tik tok" title="tik" class="wp-image-29 lazyloaded" data-src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/tik.svg"><noscript><img src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/tik.svg" alt="tik" title="tik" class="wp-image-29" data-eio="l" /></noscript></span></a>
+                        </div> -->
+
+                        <div class="et_pb_module et_pb_image et_pb_image_3_tb_header inline-block">
+                            <a href="https://www.instagram.com/herbalist.ml/" target="_blank"><span class="et_pb_image_wrap "><img src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/insta.svg" alt="herbalist instagram" title="insta" class="wp-image-28 lazyloaded" data-src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/insta.svg"><noscript><img src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/insta.svg" alt="insta" title="insta" class="wp-image-28" data-eio="l" /></noscript></span></a>
+                        </div>
+
+                        <div class="et_pb_module et_pb_image et_pb_image_3_tb_header inline-block">
+                            <a href="https://www.facebook.com/herbalist.ml/" target="_blank">
+                                <span class="et_pb_image_wrap ">
+                             <i class="fab fa-facebook sap-icon" style="color: black;"></i>
+                            </span>
+                            </a>
+                        </div>
+
+
+                        <!--
+                                                    <div class="et_pb_module et_pb_image et_pb_image_5_tb_header inline-block">
+                                                        <a href="https://twitter.com/herbalist?lang=es" target="_blank"><span class="et_pb_image_wrap "><img src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/tw.svg" alt="herbalist twitter" title="tw" class="wp-image-30 lazyloaded" data-src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/tw.svg"><noscript><img src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/tw.svg" alt="tw" title="tw" class="wp-image-30" data-eio="l" /></noscript></span></a>
+                                                    </div>
+                        -->
+
+
+
+
+                    </div>
+                </div>
+                <!-- MENU MOBILE -->
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <div id="et-main-area">
+
+            <div id="main-content">
+
+
+
+                <article id="post-2" class="post-2 page type-page status-publish has-post-thumbnail hentry">
+
+
+                    <div class="entry-content">
+                        <div class="et-l et-l--post">
+                            <div class="et_builder_inner_content et_pb_gutters3">
+
+
+                                <!--<div class="et_pb_section et_pb_section_0 et_section_regular" >
+
+                                    <div class="et_pb_row et_pb_row_0 et_pb_row_fullwidth">
+                                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                            <div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+                                                <div class="et_pb_text_inner">
+                                                    <div class="feature_slider" id="feature_slider">
+                                                        <div class="owl-carousel owl-theme">
+                                                            <div class="owl-slider item">
+                                                                <div class="feature-slider " style="background-image: url(https://www.herbalist.ml/img/vaping.jpg?v2)">
+                                                                    <div class="slider-content et_pb_row">
+                                                                        <h2>Premium <br> Vape Shop</h2>
+                                                                        <a class="more btn btn--black" target="" href="https://tawk.to/chat/61702d8df7c0440a591f2df4/default" style="display: none">
+                                                                            <span class="bg"></span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <script>
+                                                        jQuery(document).ready(function() {
+                                                            jQuery(".feature_slider .owl-theme").owlCarousel({
+                                                                items: 1,
+                                                                loop: true,
+                                                                nav: true,
+                                                                dots: true,
+                                                                dotsEach: true,
+                                                                autoplay: false,
+                                                                // autoplayTimeout: varAutoTime,
+                                                                // autoplay:false,
+                                                                // autoplayTimeout:3000,
+                                                                // autoplayHoverPause:false,
+                                                                // responsiveClass:true,
+                                                            });
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>-->
+
+
+                                <div class="et_pb_section et_pb_section_1 et_section_regular" >
+
+
+
+
+                                    <div class="et_pb_with_border et_pb_row et_pb_row_1">
+                                        <div class="et_pb_column et_pb_column_1_2 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough">
+                                            <div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner"><h1>Vapes</h1></div>
+                                            </div>
+
+                                            <div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h4>
+                                                        Los vaporizadores son una de las formas más prácticas, eficientes y populares de disfrutar de tu hierba seca y wax, ¡echa un vistazo a nuestra colección completa de vaporizadores!
+                                                    </h4>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="et_pb_row et_pb_row_2">
+                                        <div class="et_pb_column et_pb_column_1_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                            <div class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                                <div class="et_pb_blurb_content">
+                                                    <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2772 lazyload" data-src="https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png" loading="lazy" data-srcset="https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 300w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 1024w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 150w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 768w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 1536w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 1080w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 1280w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 980w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png" alt="" srcset="https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 1920w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 300w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 1024w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 150w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 768w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 1536w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 1080w, https://www.herbalist.ml/img/products/vapes/item_60a430ee29e5a_800x.png 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2772" data-eio="l" /></noscript></span></div>
+                                                    <div class="et_pb_blurb_container">
+                                                        <h2 class="et_pb_module_header"><span>VAPORIZADOR BOUNDLESS TERP PEN</span></h2>
+
+                                                        <div class="et_pb_blurb_description">
+                                                            <p class="custom-btn-price"><strong>$29.99</strong></p>
+                                                            <p class="custom-btn-comprar"> <div id="paypal-pink-mod-bong"></div> </p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2828 lazyload" data-src="https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139" loading="lazy" data-srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139" alt="" srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/grav-labs-fire-button-2_1024x1024_090eca63-4973-495b-b8ad-ff0e244be05d_600x.jpg?v=1541441139 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2828" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>Grav labs Fire Button Electronic Nail</span></h2>
+
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$149.99</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-mod-bong-7in"></div> </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_2  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2827 lazyload" data-src="https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276" loading="lazy" data-srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276" alt="" srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2827" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>Kandypens Slim Vaporizer - White</span></h2>
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$34.95</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-multi-colored-perc-bong"></div> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_3  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="960" height="960" src="https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-vaporizer-blue_600x_d267d3e1-fda2-4569-b45e-0e0fda6dff9d_large.png?v=1588177941" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2783 lazyload" data-src="https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-vaporizer-blue_600x_d267d3e1-fda2-4569-b45e-0e0fda6dff9d_large.png?v=1588177941" loading="lazy" data-srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-vaporizer-blue_600x_d267d3e1-fda2-4569-b45e-0e0fda6dff9d_large.png?v=1588177941 960w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-vaporizer-blue_600x_d267d3e1-fda2-4569-b45e-0e0fda6dff9d_large.png?v=1588177941 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-vaporizer-blue_600x_d267d3e1-fda2-4569-b45e-0e0fda6dff9d_large.png?v=1588177941 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-vaporizer-blue_600x_d267d3e1-fda2-4569-b45e-0e0fda6dff9d_large.png?v=1588177941 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-vaporizer-blue_600x_d267d3e1-fda2-4569-b45e-0e0fda6dff9d_large.png?v=1588177941 480w" data-sizes="auto" /><noscript><img width="960" height="960" src="https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-vaporizer-blue_600x_d267d3e1-fda2-4569-b45e-0e0fda6dff9d_large.png?v=1588177941" alt="" srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-vaporizer-blue_600x_d267d3e1-fda2-4569-b45e-0e0fda6dff9d_large.png?v=1588177941 960w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-vaporizer-blue_600x_d267d3e1-fda2-4569-b45e-0e0fda6dff9d_large.png?v=1588177941 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-vaporizer-blue_600x_d267d3e1-fda2-4569-b45e-0e0fda6dff9d_large.png?v=1588177941 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-vaporizer-blue_600x_d267d3e1-fda2-4569-b45e-0e0fda6dff9d_large.png?v=1588177941 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-vaporizer-blue_600x_d267d3e1-fda2-4569-b45e-0e0fda6dff9d_large.png?v=1588177941 480w" sizes="(max-width: 960px) 100vw, 960px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2783" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>Yocan Hive Vaporizer - Blue</span></h2>
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$34.99</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-soft-serve-bong-9in"></div> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    </div>
+
+                                    <div class="et_pb_row et_pb_row_3">
+                                        <div class="et_pb_column et_pb_column_1_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                            <div class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                                <div class="et_pb_blurb_content">
+                                                    <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2772 lazyload" data-src="https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043" loading="lazy" data-srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043" alt="" srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-yellow-2_600x_7efc6974-e3fc-45e8-8c94-bd75110d842e_large.png?v=1622222043 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2772" data-eio="l" /></noscript></span></div>
+                                                    <div class="et_pb_blurb_container">
+                                                        <h2 class="et_pb_module_header"><span>Little Dipper Dab Straw Vaporizer - Yellow</span></h2>
+
+                                                        <div class="et_pb_blurb_description">
+                                                            <p class="custom-btn-price"><strong>$29.99</strong></p>
+                                                            <p class="custom-btn-comprar"> <div id="paypal-pink-mod-bong"></div> </p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2828 lazyload" data-src="https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370" loading="lazy" data-srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370" alt="" srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/yocan-hive-2.0-vaporizer-red_600x_2857a886-bb85-4e5f-b3f4-ef10859b549c_large.png?v=1588178370 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2828" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>Yocan Hive 2.0 Vaporizer - Red</span></h2>
+
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$44.99</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-mod-bong-7in"></div> </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_2  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2827 lazyload" data-src="https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666" loading="lazy" data-srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666" alt="" srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/Yocan_UNI_Matt_Gold_600x_d3d2e971-021b-433d-b53e-8dae9458e137_large.png?v=1607830666 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2827" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>Yocan Uni Box Mod Vaporizer - Matte Gold</span></h2>
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$34.99</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-multi-colored-perc-bong"></div> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                        <div class="et_pb_column et_pb_column_1_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_3  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="960" height="960" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8AAAAPAAQAAAADSrS02AAAAAnRSTlMAAHaTzTgAAACHSURBVHja7cExAQAAAMKg9U9tB2+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOA3xc8AAWvTWIoAAAAASUVORK5CYII=" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2783 lazyload" data-src="https://www.herbalist.ml/img/products/vapes/Pulsar-apx-tiedye_large_492513cb-a0ca-4055-a52f-e6711514df5d_600x.jpg" loading="lazy" data-srcset="https://www.herbalist.ml/img/products/vapes/Pulsar-apx-tiedye_large_492513cb-a0ca-4055-a52f-e6711514df5d_600x.jpg 960w, https://www.herbalist.ml/img/products/vapes/Pulsar-apx-tiedye_large_492513cb-a0ca-4055-a52f-e6711514df5d_600x.jpg 300w, https://www.herbalist.ml/img/products/vapes/Pulsar-apx-tiedye_large_492513cb-a0ca-4055-a52f-e6711514df5d_600x.jpg 150w, https://www.herbalist.ml/img/products/vapes/Pulsar-apx-tiedye_large_492513cb-a0ca-4055-a52f-e6711514df5d_600x.jpg 768w, https://www.herbalist.ml/img/products/vapes/Pulsar-apx-tiedye_large_492513cb-a0ca-4055-a52f-e6711514df5d_600x.jpg 480w" data-sizes="auto" /><noscript><img width="960" height="960" src="https://www.herbalist.ml/img/products/vapes/Pulsar-apx-tiedye_large_492513cb-a0ca-4055-a52f-e6711514df5d_600x.jpg" alt="" srcset="https://www.herbalist.ml/img/products/vapes/Pulsar-apx-tiedye_large_492513cb-a0ca-4055-a52f-e6711514df5d_600x.jpg 960w, https://www.herbalist.ml/img/products/vapes/Pulsar-apx-tiedye_large_492513cb-a0ca-4055-a52f-e6711514df5d_600x.jpg 300w, https://www.herbalist.ml/img/products/vapes/Pulsar-apx-tiedye_large_492513cb-a0ca-4055-a52f-e6711514df5d_600x.jpg 150w, https://www.herbalist.ml/img/products/vapes/Pulsar-apx-tiedye_large_492513cb-a0ca-4055-a52f-e6711514df5d_600x.jpg 768w, https://www.herbalist.ml/img/products/vapes/Pulsar-apx-tiedye_large_492513cb-a0ca-4055-a52f-e6711514df5d_600x.jpg 480w" sizes="(max-width: 960px) 100vw, 960px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2783" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>Pulsar APX 2 Vaporizer - Tie Die</span></h2>
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$69.99</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-soft-serve-bong-9in"></div> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    </div>
+
+                                    <div class="et_pb_row et_pb_row_4">
+                                        <div class="et_pb_column et_pb_column_1_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                            <div class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                                <div class="et_pb_blurb_content">
+                                                    <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2772 lazyload" data-src="https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg" loading="lazy" data-srcset="https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 300w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 1024w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 150w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 768w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 1536w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 1080w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 1280w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 980w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg" alt="" srcset="https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 1920w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 300w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 1024w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 150w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 768w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 1536w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 1080w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 1280w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 980w, https://www.herbalist.ml/img/products/vapes/1_1024x1024_2bfc5304-4f68-4afd-921e-6c63fddfce0e_600x.jpg 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2772" data-eio="l" /></noscript></span></div>
+                                                    <div class="et_pb_blurb_container">
+                                                        <h2 class="et_pb_module_header"><span>G Pen Slim BUSH Snoop Dogg Hookah</span></h2>
+
+                                                        <div class="et_pb_blurb_description">
+                                                            <p class="custom-btn-price"><strong>$24.95</strong></p>
+                                                            <p class="custom-btn-comprar"> <div id="paypal-pink-mod-bong"></div> </p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2828 lazyload" data-src="https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564" loading="lazy" data-srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564" alt="" srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/GoodyVapeBatterycopy_600x.jpg?v=1599870564 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2828" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>Goody Vape Battery</span></h2>
+
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$24.99</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-mod-bong-7in"></div> </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_2  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2827 lazyload" data-src="https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg" loading="lazy" data-srcset="https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 1920w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 300w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 1024w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 150w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 768w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 1536w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 1080w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 1280w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 980w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg" alt="" srcset="https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 1920w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 300w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 1024w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 150w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 768w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 1536w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 1080w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/13002290_612x_6fd66dd1-90a2-4ca5-b2e4-cd110659eebe_600x.jpg?v=1571174276 980w, https://www.herbalist.ml/img/products/vapes/Grenco_G_Slim_Hookah_Black_Front_003_grande_f257ade1-5ba8-4cd3-aa5b-6a63f6e586aa_600x.jpg 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2827" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>G Pen Slim (Hookah)</span></h2>
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$24.95</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-multi-colored-perc-bong"></div> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                        <div class="et_pb_column et_pb_column_1_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+                                            <div class="et_pb_module et_pb_blurb et_pb_blurb_3  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                                <div class="et_pb_blurb_content">
+                                                    <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="960" height="960" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8AAAAPAAQAAAADSrS02AAAAAnRSTlMAAHaTzTgAAACHSURBVHja7cExAQAAAMKg9U9tB2+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOA3xc8AAWvTWIoAAAAASUVORK5CYII=" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2783 lazyload" data-src="https://cdn.shopify.com/s/files/1/0761/6031/products/pic1_3_9_large.png?v=1624387185" loading="lazy" data-srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/pic1_3_9_large.png?v=1624387185 960w, https://cdn.shopify.com/s/files/1/0761/6031/products/pic1_3_9_large.png?v=1624387185 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/pic1_3_9_large.png?v=1624387185 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/pic1_3_9_large.png?v=1624387185 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/pic1_3_9_large.png?v=1624387185 480w" data-sizes="auto" /><noscript><img width="960" height="960" src="https://cdn.shopify.com/s/files/1/0761/6031/products/pic1_3_9_large.png?v=1624387185" alt="" srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/pic1_3_9_large.png?v=1624387185 960w, https://cdn.shopify.com/s/files/1/0761/6031/products/pic1_3_9_large.png?v=1624387185 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/pic1_3_9_large.png?v=1624387185 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/pic1_3_9_large.png?v=1624387185 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/pic1_3_9_large.png?v=1624387185 480w" sizes="(max-width: 960px) 100vw, 960px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2783" data-eio="l" /></noscript></span></div>
+                                                    <div class="et_pb_blurb_container">
+                                                        <h2 class="et_pb_module_header"><span>Kandypens Session E-Nail - Odyssey</span></h2>
+                                                        <div class="et_pb_blurb_description">
+                                                            <p class="custom-btn-price"><strong>$119.97</strong></p>
+                                                            <p class="custom-btn-comprar"> <div id="paypal-soft-serve-bong-9in"></div> </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="et_pb_row et_pb_row_5">
+                                        <div class="et_pb_column et_pb_column_1_4 et_pb_column_15  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                            <div class="et_pb_module et_pb_blurb et_pb_blurb_12  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                                <div class="et_pb_blurb_content">
+                                                    <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2847 lazyload" data-src="https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg" loading="lazy" data-srcset="https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 1920w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 300w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 1024w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 150w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 768w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 1536w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 1080w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 1280w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 980w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg" alt="" srcset="https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 1920w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 300w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 1024w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 150w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 768w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 1536w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 1080w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 1280w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 980w, https://www.herbalist.ml/img/products/vapes/dip-dipper-2-in-1-dab-pen-and-dab-straw-vape-29071382609999_400x.jpg 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2847" data-eio="l" /></noscript></span></div>
+                                                    <div class="et_pb_blurb_container">
+                                                        <h2 class="et_pb_module_header"><span>Dip Dipper 2-in-1 Dab Pen and Dab Straw Vape</span></h2>
+                                                        <div class="et_pb_blurb_description">
+                                                            <p class="custom-btn-price"><strong>$124.20</strong></p>
+                                                            <p class="custom-btn-comprar"> <div id="paypal-button-container"></div> </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_13  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2849 lazyload" data-src="https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg" loading="lazy" data-srcset="https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 1920w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 300w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 1024w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 150w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 768w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 1536w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 1080w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 1280w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 980w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg" alt="" srcset="https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 1920w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 300w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 1024w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 150w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 768w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 1536w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 1080w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 1280w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 980w, https://www.herbalist.ml/img/products/vapes/dip-evri-starter-pack-vape-w-attachments-29071425634383_400x.jpg 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2849" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>Dip EVRI Starter Pack Vape w/Attachments</span></h2>
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$74.20</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-button-container"></div> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_14  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="400" height="400" src="https://www.herbalist.ml/img/products/vapes/airis-dabble-2-in-1-vape-4in-15439259172943_400x.jpg" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2804 lazyload" data-src="https://www.herbalist.ml/img/products/vapes/airis-dabble-2-in-1-vape-4in-15439259172943_400x.jpg" loading="lazy" data-srcset="https://www.herbalist.ml/img/products/vapes/airis-dabble-2-in-1-vape-4in-15439259172943_400x.jpg 400w, https://www.herbalist.ml/img/products/vapes/airis-dabble-2-in-1-vape-4in-15439259172943_400x.jpg 300w, https://www.herbalist.ml/img/products/vapes/airis-dabble-2-in-1-vape-4in-15439259172943_400x.jpg 150w" data-sizes="auto" /><noscript><img width="400" height="400" src="https://www.herbalist.ml/img/products/vapes/airis-dabble-2-in-1-vape-4in-15439259172943_400x.jpg" alt="" srcset="https://www.herbalist.ml/img/products/vapes/airis-dabble-2-in-1-vape-4in-15439259172943_400x.jpg 400w, https://www.herbalist.ml/img/products/vapes/airis-dabble-2-in-1-vape-4in-15439259172943_400x.jpg 300w, https://www.herbalist.ml/img/products/vapes/airis-dabble-2-in-1-vape-4in-15439259172943_400x.jpg 150w" sizes="(max-width: 400px) 100vw, 400px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2804" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>Airis Dabble 2-in-1 Vape</span></h2>
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$57.10</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-button-container"></div> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_18  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_15  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2850 lazyload" data-src="https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg" loading="lazy" data-srcset="https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 1920w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 300w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 1024w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 150w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 768w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 1536w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 1080w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 1280w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 980w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg" alt="" srcset="https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 1920w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 300w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 1024w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 150w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 768w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 1536w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 1080w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 1280w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 980w, https://www.herbalist.ml/img/products/vapes/dip-little-dipper-dab-straw-vape-29071363309647_400x.jpg 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2850" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>Dip Little Dipper Dab Straw Vape</span></h2>
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$34.20</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-button-container"></div> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    </div>
+
+                                    <div class="et_pb_row et_pb_row_6">
+                                        <div class="et_pb_column et_pb_column_1_4 et_pb_column_19  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                            <div class="et_pb_module et_pb_blurb et_pb_blurb_16  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                                <div class="et_pb_blurb_content">
+                                                    <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2852 lazyload" data-src="https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076" loading="lazy" data-srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076" alt="" srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/c-box-p-g1_large.png?v=1607229076 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2852" data-eio="l" /></noscript></span></div>
+                                                    <div class="et_pb_blurb_container">
+                                                        <h2 class="et_pb_module_header"><span>KandyPens C-Box Pro - All Gold</span></h2>
+                                                        <div class="et_pb_blurb_description">
+                                                            <p class="custom-btn-price"><strong>$49.95</strong></p>
+                                                            <p class="custom-btn-comprar"> <div id="paypal-button-container"></div> </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_20  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_17  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2854 lazyload" data-src="https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png" loading="lazy" data-srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png" alt="" srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/LD-studio-blue-2_600x_da58b077-f2d9-49b2-be7e-48f764407595_large.png 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2854" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>Little Dipper Dab Straw Vaporizer - Ocean Blue</span></h2>
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$29.99</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-button-container"></div> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_21  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_18  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2853 lazyload" data-src="https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png" loading="lazy" data-srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png" alt="" srcset="https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 1920w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 300w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 1024w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 150w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 768w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 1536w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 1080w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 1280w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 980w, https://cdn.shopify.com/s/files/1/0761/6031/products/Dipper-blue-studio-9_600x_a8903f27-ec6b-493c-8c47-80aed0b83656_large.png 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2853" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>The Dipper - Ocean Blue</span></h2>
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$114.99</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-button-container"></div> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="et_pb_column et_pb_column_1_4 et_pb_column_22  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                        <div class="et_pb_module et_pb_blurb et_pb_blurb_19  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+
+
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png" alt=""   class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2855 lazyload" data-src="https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png" loading="lazy" data-srcset="https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 1920w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 300w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 1024w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 150w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 768w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 1536w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 1080w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 1280w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 980w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 480w" data-sizes="auto" /><noscript><img width="1920" height="1920" src="https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png" alt="" srcset="https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 1920w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 300w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 1024w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 150w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 768w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 1536w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 1080w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 1280w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 980w, https://www.herbalist.ml/img/products/vapes/yocanevolved2020colors-applegreen_600x_51ab46ef-d70e-44d4-8ee4-1e902ca3275f_600x.png 480w" sizes="(max-width: 1080px) 100vw, 1080px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-2855" data-eio="l" /></noscript></span></div>
+                                                <div class="et_pb_blurb_container">
+                                                    <h2 class="et_pb_module_header"><span>YOCAN - EVOLVE D V2 VAPORIZER</span></h2>
+                                                    <div class="et_pb_blurb_description">
+                                                        <p class="custom-btn-price"><strong>$39.99</strong></p>
+                                                        <p class="custom-btn-comprar"> <div id="paypal-button-container"></div> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    </div>
+
+                                    <!--collection_description-->
+                                    <div class="et_pb_row">
+
+                                        <div class="section collection_description">
+
+                                            <h2>Geniales marcas de vaporizadores y los mejores vaporizadores a la venta</h2>
+
+                                            <p>Si está buscando una experiencia de vapeo de lujo o es un fumador experimentado que quiere actualizarse a un vaporizador, hemos creado una lista seleccionada de los mejores vaporizadores de alta calidad con tecnologías avanzadas y características geniales que hacen que valga la pena. centavo.</p>
+                                            <ul>
+                                                <li>
+                                                    <b>Kandypens OURA</b> - Este equipo inteligente se calienta en solo 5 segundos, tiene la capacidad única de cambiar la temperatura a mitad de la sesión y es extremadamente intuitivo de usar con 4 niveles de temperatura ideales. Echa un vistazo a nuestra revisión de Kandypens para ensuciarte con este elegante equipo de dab eléctrico.</li>
+                                                <li>
+                                                    <b>Puffco Peak</b> - Similar al Kandypens OURA, este vaporizador de concentrado tiene 4 configuraciones de temperatura diferentes y se calienta en 20 segundos. La mejor parte del Peak es que se puede cargar por completo con un supercargador, por lo que puedes usarla durante días o casi 30 aplicaciones, ¡lo que ocurra primero! Si tiene dificultades para decidir entre Kandypens OURA y Puffco Peak, ¡nuestra Guía de compra de equipos portátiles para Dab lo ayudará a encontrar el mejor para usted!</li>
+                                                <li><b>Vaporizadores STORZ N BICKEL:</b> estas máquinas fabricadas en Alemania están hechas para durar. Los fanáticos acérrimos de STORZ N BICKEL atestiguan años de vapeo, incluso más de una década fumando a medianoche con el Classic Volcano Vaporizer. Incluso recibió una distinción de grado médico, por lo que realmente está obteniendo lo mejor de lo mejor cuando se trata de los mejores vaporizadores de escritorio del mercado. Ya sea que opte por el Volcano Vape clásico o híbrido, puede estar seguro de que está hecho para un uso intensivo con la mejor tecnología y los mejores componentes de su clase. Si está buscando un vaporizador portátil, pero no necesariamente un bolígrafo vaporizador, el Crafty Plus (Crafty+) o el Mighty seguramente se convertirán en su nuevo mejor amigo, compañero y confidente todo en uno.</li>
+                                                <li>
+                                                    <b>Grenco Science G Pen Roam Vape</b> - Donde quiera que vaya, este vaporizador de concentrado extremadamente portátil es perfecto para el dabber en movimiento que busca un dispositivo que se calentará en segundos, está hecho de componentes duraderos de alta calidad y ofrece caladas llenas de sabor con su filtración de agua superior. También es muy fácil de limpiar, que es el sueño de un dabber, ¡todos podemos dar fe de eso!</li>
+                                                <li><b>FOCUS V CARTA Electric Dab Rig:</b> este equipo electrónico para dab para cera y hierba seca nos hace trucos mentales Jedi a todos nosotros. Es un e-rig portátil con un potente rendimiento de escritorio que se activa mediante una aplicación, por lo que tienes el control total de tu universo de dabbing. También vale la pena señalar que se puede cargar con un USB similar a una plataforma inteligente estándar, por lo que puede esperar golpes suaves sin combustión en la carretera. También tenemos el atomizador Focus V Carta, el cubo de titanio y la tapa de carbohidratos si necesita estos componentes individuales por separado</li>
+                                            </ul>
+                                            <h2>Guía de vapeo: elementos esenciales de vapeo y el mejor vaporizador para mí</h2>
+
+
+                                            <p>¿Por qué vapear en lugar de fumar? Los métodos tradicionales de fumar liberan más sustancias químicas y carcinógenos debido a las altas temperaturas y la combustión, por lo que muchos han recurrido al vapeo como una alternativa saludable a fumar. Los vaporizadores activan sus hierbas a temperaturas mucho más bajas que los dispositivos para fumar normales (de ahí la falta de combustión en el proceso de vapeo). Esta temperatura más baja tiene varios beneficios:</p>
+                                            <ul>
+                                                <li>
+                                                    <b>Más fácil de fumar</b>: no todo el mundo puede o quiere inhalar humo en sus pulmones. Vapear es una gran alternativa, ya que la experiencia es mucho más fluida y saludable.</li>
+                                                <li>
+                                                    <b>Sabor más limpio</b>: sin las cenizas ni las partículas de alquitrán del proceso de combustión, el vapeo te brinda sabores limpios y nítidos.</li>
+                                            </ul>
+                                            <h2>Cómo funcionan los vaporizadores y cómo vaporizar</h2>
+
+
+                                            <p>Ya sea un novato o un veterano experimentado, todos podemos apreciar la mecánica detrás del vapeo. Como cualquier herramienta que pueda usar, los vaporizadores usan el calor de una fuente de batería (como un mod de vaporizador) para calentar el elemento que activa los químicos en su hierba y crea vapor en lugar de humo dentro de la cámara del atomizador. El usuario inhala lentamente a través de la boquilla, reteniendo el vapor durante 1 o 2 segundos antes de exhalar. Los vaporizadores calientan su hierba seca o concentrado sin combustión (fuego) de una de dos maneras:</p>
+                                            <ol>
+                                                <li>
+                                                    <b>Conducción</b>, lo que significa que una placa caliente calienta directamente sus materiales</li>
+                                                <li>
+                                                    <b>Convección</b>, lo que significa que el aire caliente circula para calentar las cosas de manera más uniforme. La mayoría de nuestros vaporizadores funcionan de esta manera.</li>
+                                            </ol>
+                                            <p>Si bien los <b>vapeadores de convección</b> son una opción de mayor calidad, los <b>vapeadores de conducción</b> suelen ser la opción más asequible. Uno de los mejores bolígrafos de vape baratos disponibles en nuestra vape shop en línea es el Vertex Vape Pen y por solo $ 4.20 es una ganga.</p>
+                                            <h2>Cómo usar un bolígrafo vape</h2>
+
+
+                                            <p>Los vaporizadores tienen muchísimos beneficios al ser más eficientes, discretos, libres de humo, menos olorosos y relativamente fáciles de operar. Los bolígrafos Vape que tienen botones requieren hacer clic en ellos varias veces (normalmente 5) para activar y 3 clics para modificar la configuración de calor. Cuando estés a punto de dar una calada, mantén pulsado el botón que calienta el humo dentro del atomizador, da una calada durante 1-2 segundos y exhala.</p>
+                                            <h2>Partes clave de un vaporizador</h2>
+
+
+                                            <ol>
+                                                <li>
+                                                    <b>Batería</b>: la batería es, con mucho, la parte más importante de cualquier vaporizador. La calidad de la batería determina la calidad de su vaporizador y su experiencia de vapeo. Una batería de alta calidad tendrá mayor precisión en términos de control de temperatura, durará mucho más entre cargas y se calentará más rápido.</li>
+                                                <li>
+                                                    <b>Cámara</b> o <b>Cartucho</b>: esta es la parte que contiene la hierba, la cera o los aceites. La mayoría de los vaporizadores tienen una cámara que puede llenar con su propio material, pero algunos vaporizadores como las baterías 510 requieren un cartucho. La mayoría de los cartuchos se pueden comprar precargados, pero hay algunos modelos más nuevos que puede llenar con sus propios materiales.</li>
+                                            </ol>
+                                            <h2>¿Cuál es el mejor vaporizador para mí?</h2>
+
+
+                                            <ul>
+                                                <li>
+                                                    Los <b>vaporizadores de hierbas secas</b> como el Orion Kind Pen son exactamente como suenan. Simplemente cargue la cámara con sus hierbas secas favoritas para consumirlas de una manera nueva y más segura que otras opciones de hierbas secas. Echa un vistazo a nuestra colección de los mejores vaporizadores de hierbas secas aquí.</li>
+                                                <li>
+                                                    Los <b>vaporizadores de cera/concentrado</b> como el Slim Wax Kind Pen vienen en una variedad de estilos, pero básicamente todos hacen lo mismo: lo ayudan a consumir concentrados de cera o aceites de manera segura y eficiente. Por lo general, tienen cámaras recargables, pero la mayoría requiere cartuchos.</li>
+                                                <li>
+                                                    Las <b>baterías 510</b> son un tipo popular de vaporizador de concentrado que es extremadamente simple de usar porque simplemente inserta un cartucho y ¡está listo para vapear! Puede colocar un cartucho precargado que puede comprar a su vendedor preferido, y algunas compañías están comenzando a fabricar cartuchos recargables para estos vaporizadores. Se denominan así por el conector 510 que une el cartucho a la batería. Echa un vistazo a la&nbsp;<b data-mce-fragment="1">batería de pipa de madera para vape&nbsp;</b>si quieres una pipa de vape genial que te haga ver como Sherlock Holmes con sus adornos de madera y se adapta a la mayoría de las baterías de 510 hilos .&nbsp;</li>
+                                            </ul>
+                                            <h2>Estilos de vaporizador</h2>
+
+
+                                            Una vez que decidas qué tipo de vaporizador de marihuana es el adecuado para ti (hierba seca o concentrados), es hora de llegar a los detalles y encontrar el tipo de vaporizador perfecto para tu estilo de vida.<br>
+                                            <ul>
+                                                <li>
+                                                    Los <b>vape pens</b> como el Yocan Box Set son una de las opciones más portátiles. Largos y delgados como bolígrafos, caben fácilmente en un bolso, bolsillo, mochila o guantera. Los bolígrafos vaporizadores también son discretos y fáciles de usar, además muchos vienen en diseños elegantes.</li>
+                                                <li>
+                                                    Los <b>vaporizadores de mesa</b> son un gran elemento básico si prefiere vapear en la comodidad de su hogar en lugar de estar fuera de casa. También conocidos como vaporizadores de escritorio, son más grandes que los bolígrafos de vape, por lo que puede insertar más cera o hierba seca en ellos para una sesión más larga.</li>
+                                                <li>
+                                                    Los <b>vaporizadores Stealth</b> como el Discreet Kind Pen son generalmente más pequeños que otros tipos de vaporizadores, lo que le permite guardarlos fácilmente en su bolsillo en un abrir y cerrar de ojos, y algunos incluso vienen ingeniosamente disfrazados para parecer encendedores o otros objetos mundanos.</li>
+                                                <li>
+                                                    Los <b>vape mods</b> son más grandes que los vape pens y producen más vapor, pero funcionan de forma muy similar a los vape pens.</li>
+                                            </ul>
+                                            <h2>vape shop cerca de mí</h2>
+
+
+                                            <p>Si bien puedes buscar una tienda de vaporizadores o una tienda de vaporizadores cerca de ti, ¿qué mejor que recibir tus vaporizadores discretamente en la puerta de tu casa? La familia Herbalist Smoke Shop dice <i>alto</i> desde casa con la mejor selección de vaporizadores online. Así que prepárate y comienza a ver videos sobre cómo hacer trucos de vapeo para que puedas impresionar a todos tus conocidos.</p>
+                                        </div>
+
+                                    </div>
+                                    <!--collection_description-->
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </article>
+
+
+
+            </div>
+
+            <!-- FOOTER #2 -->
+            <footer class="et-l et-l--footer">
+                <div class="et_builder_inner_content et_pb_gutters3">
+                    <div class="et_pb_section et_pb_section_1_tb_footer cus-animate-section et_section_regular" >
+
+
+
+
+                        <div class="et_pb_row et_pb_row_0_tb_footer et_pb_row_fullwidth cus-animate-wrap">
+                            <div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                <div class="et_pb_module et_pb_text et_pb_text_0_tb_footer cus-animate  et_pb_text_align_center et_pb_bg_layout_light">
+                                    <div class="et_pb_text_inner">
+                                        <p>
+                                            ACCESORIOS 4:20 • ACCESORIOS 4:20 • ACCESORIOS 4:20 • ACCESORIOS 4:20 • ACCESORIOS 4:20 • ACCESORIOS 4:20 • ACCESORIOS 4:20 • ACCESORIOS 4:20 • ACCESORIOS 4:20 • ACCESORIOS 4:20 • ACCESORIOS 4:20
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="et_pb_section et_pb_section_3_tb_footer et_section_regular" >
+
+
+
+
+                        <div class="et_pb_row et_pb_row_1_tb_footer et_pb_gutters2 et_pb_row--with-menu">
+                            <div class="et_pb_column et_pb_column_1_2 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+
+                                <div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_1_tb_footer et_clickable  et_pb_text_align_left et_pb_bg_layout_light">
+
+                                    <div class="et_pb_text_inner"><h2>Obtén un 10% de descuento</h2></div>
+
+                                </div>
+
+
+                                <div class="et_pb_module et_pb_text et_pb_text_2_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+                                    <div class="et_pb_text_inner"><h3>Además, obtén ofertas exclusivas, puntos de viajero frecuente y más.</h3></div>
+                                </div><div class="et_pb_module et_pb_text et_pb_text_3_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+                                <div class="et_pb_text_inner"><p><div role="form" class="wpcf7" id="wpcf7-f2753-o1" lang="en-US" dir="ltr">
+                                    <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+                                    <form action="/#wpcf7-f2753-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+                                        <div style="display: none;">
+                                            <input type="hidden" name="_wpcf7" value="2753" />
+                                            <input type="hidden" name="_wpcf7_version" value="5.5.3" />
+                                            <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f2753-o1" />
+                                            <input type="hidden" name="_wpcf7_container_post" value="0" />
+                                            <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+                                        </div>
+                                        <p><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Tú email" /></span><input type='checkbox' id='KLCF_gdpr' name='KLCF_gdpr' value='1' required>
+                                            <label for='KLCF_gdpr'> </label><input type="submit" value="Inscribirse" class="wpcf7-form-control has-spinner wpcf7-submit" /></p>
+                                        <p style="display: none !important;"><label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js" name="_wpcf7_ak_js" value="212"/><script>document.getElementById( "ak_js" ).setAttribute( "value", ( new Date() ).getTime() );</script></p><div class="wpcf7-response-output" aria-hidden="true"></div></form></div></p></div>
+                            </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="et_pb_row et_pb_row_2_tb_footer foot-icons">
+                            <div class="et_pb_column et_pb_column_1_2 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                <div class="et_pb_module et_pb_image et_pb_image_1_tb_footer">
+                                    <a href="https://wa.me/50662609063/?text=Por favor escríba aquí su consulta:)" target="_blank" class="custom-a-social">
+                                        <i class="fab fa-whatsapp sap-icon"></i>
+                                    </a>
+                                </div>
+
+                                <div class="et_pb_module et_pb_image et_pb_image_1_tb_footer">
+                                    <a href="https://www.tiktok.com/@herbalist" target="_blank">
+                                        <span class="et_pb_image_wrap ">
+                                <img src="https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/2021/07/tik.svg" alt="" title="tik" class="wp-image-29" />
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="et_pb_module et_pb_image et_pb_image_0_tb_footer">
+                                    <a href="https://www.instagram.com/herbalist.ml/" target="_blank" class="custom-a-social">
+                                        <i class="fab fa-instagram sap-icon"></i>
+                                    </a>
+                                </div>
+
+                                <div class="et_pb_module et_pb_image et_pb_image_0_tb_footer">
+                                    <a href="https://twitter.com/herbalist?lang=es" target="_blank" class="custom-a-social">
+                                        <i class="fab fa-twitter sap-icon"></i>
+                                    </a>
+                                </div>
+
+                                <div class="et_pb_module et_pb_image et_pb_image_2_tb_footer">
+                                    <a href="https://www.facebook.com/herbalist.ml/" target="_blank" class="custom-a-social">
+                                        <i class="fab fa-facebook sap-icon"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="et_pb_column et_pb_column_1_2 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                <div class="et_pb_module et_pb_text et_pb_text_5_tb_footer inline-block  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+                                    <div class="et_pb_text_inner"><p><a href="https://www.herbalist.ml/privacy-policy/" target="_blank">Política de privacidad</a></p></div>
+                                </div>
+                                <div class="et_pb_module et_pb_text et_pb_text_6_tb_footer inline-block  et_pb_text_align_left et_pb_bg_layout_light">
+
+                                    <div class="et_pb_text_inner"><p>© 2022 Herbalist® Smoke Shop. Todos los derechos reservados.</p></div>
+                                </div>
+                                <div class="et_pb_module et_pb_text et_pb_text_7_tb_footer inline-block  et_pb_text_align_left et_pb_bg_layout_light">
+                                    <div class="et_pb_text_inner">
+                                        <a href="mailto:shop@herbalist.ml" target="_blank">shop@herbalist.ml</a> <a href="https://www.herbalist.ml/privacy-policy/" target="_blank">Política de Privacidad</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                        <div class="et_pb_row et_pb_row_4_tb_footer foot-icons">
+                            <div class="et_pb_column et_pb_column_4_4 et_pb_column_8_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                <div class="et_pb_module et_pb_text et_pb_text_9_tb_footer inline-block  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+                                    <div class="et_pb_text_inner"><p><a href="https://www.herbalist.ml/privacy-policy/" target="_blank">Política de privacidad</a></p></div>
+                                </div><div class="et_pb_module et_pb_text et_pb_text_10_tb_footer inline-block  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+                                <div class="et_pb_text_inner"><p>© 2022 Herbalist® Smoke Shop.</p></div>
+                            </div>
+
+                                <div class="et_pb_module et_pb_text et_pb_text_11_tb_footer inline-block  et_pb_text_align_left et_pb_bg_layout_light">
+                                    <div class="et_pb_text_inner"><p><a href="mailto:shop@herbalist.ml@herbalist.ml">shop@herbalist.ml</a></p>
+                                    </div>
+
+                                    <div class="custom-cards">
+                                        <img src="https://www.herbalist.ml/img/cards.png" alt="Tipos de pagos disnopibles" class="wp-image-16">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </footer>
+            <!-- FOOTER #2 -->
+
+        </div>
+
+
+    </div>
+</div>
+
+<script type="text/javascript">var overlays_with_css_trigger = {};</script><script type="text/javascript">var overlays_with_automatic_trigger = {'2462': '{"at_type":"overlay-timed","at_value":"2","at_onceperload":"0"}','2269': '{"at_type":"overlay-timed","at_value":"7","at_onceperload":"0"}',};</script><style>
+    .overlay-customclose-btn-2462 {
+        color: !important;
+        background-color: !important;
+        font-size:25px !important;
+        padding:5px !important;
+        -moz-border-radius:% !important;
+        -webkit-border-radius:% !important;
+        -khtml-border-radius:% !important;
+        border-radius:% !important;
+    }
+</style><style id="divioverlay-styles"></style><div id="divioverlay-links"></div><div id="sidebar-overlay" class="hiddenMainContainer"></div>		<script type="text/javascript">
+    var divioverlays_ajaxurl = "https://goembarc.com/"
+        , divioverlays_us = "5c00ff04d2"
+        , divioverlays_loadingimg = "https://epjftw6jo4j.exactdn.com/wp-content/plugins/divi-overlays/assets/img/divilife-loader.svg";
+</script>
+
+<!--<script type="text/template" id="tmpl-age-gate">
+
+    <div class="age-gate-wrapper"><div class="age-gate-background-colour"></div><div class="age-gate-background"></div><div class="age-gate-loader"><svg version="1.1" class="age-gate-loading-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve"><path opacity="0.2" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/><path d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0 C22.32,8.481,24.301,9.057,26.013,10.047z"><animateTransform attributeType="xml"
+            attributeName="transform"
+            type="rotate"
+            from="0 20 20"
+            to="360 20 20"
+            dur="0.5s"
+            repeatCount="indefinite"/></path></svg>    </div><div class="age-gate" role="dialog" aria-modal="true" aria-label="Verify you are over 21 years of age?"><form method="post" action="https://goembarc.com" class="age-gate-form"><h1 class="age-gate-heading age-gate-logo"><img src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/06/logo.svg" alt="Embarc " class="age-gate-logo-image" /></h1>        <h2 class="age-gate-subheading">Are you 21+?</h2><div class="age-gate-error" data-error-field="buttons"></div><button tabindex="1" type="submit" value="1" name="age_gate[confirm]" class="age-gate-submit-yes">
+        Yesss!    </button><button tabindex="1" type="submit" name="age_gate[confirm]" class="age-gate-submit-no">
+        No.    </button><div class="age-gate-additional-information"><p>By clicking “YES” I represent I am at least the age of twenty-one (21). I have read, understood, and agree to Terms of Service and Privacy Policy.</p></div><input type="hidden" name="age_gate[age]" value="TWpFPQ==" /><input type="hidden" name="action" value="age_gate_submit" /><input type="hidden" name="confirm_action" value="0" /></form></div></div>
+
+</script-->
+
+<script>
+    jQuery(document).ready(function() {
+        jQuery(".cus-animate-section").show("slow");
+        // jQuery(".cus-animate-section").addClass("cus-animation");
+    });
+</script>
+
+
+<link rel='stylesheet' id='divi-overlays-animate-style-css'  href='https://www.herbalist.ml/cdnjs/animate.min.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-overlays-customanimations-css'  href='https://www.herbalist.ml/wp-content/plugins/divi-overlays/assets/css/custom_animations.css?ver=2.9.6.5' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-overlays-custom_style_css-css'  href='https://www.herbalist.ml/wp-content/plugins/divi-overlays/assets/css/style.css?ver=2.9.6.5' type='text/css' media='all' />
+
+
+<script type='text/javascript' src='https://www.herbalist.ml/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+
+
+<script type='text/javascript' id='jquery-js-after'>
+    jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});
+</script>
+
+<script type='text/javascript' id='age-gate-js-extra'>
+    /* <![CDATA[ */
+    var age_gate_params = {"ajaxurl":"https:\/\/goembarc.com\/wp-admin\/admin-ajax.php","settings":{"age":21,"type":"all","bypass":"","restrict":"","title":false,"current_title":"Embarc | Discover The Best California Cannabis Dispensaries","screen":"front","ignore_logged":0,"rechallenge":1,"has_filter":false,"viewport":"1","anon":0,"transition":"","cookie_domain":false,"trap_focus":1,"trap_elements":""},"misc":{"i":2,"t":"front","qs":0},"errors":{"invalid":"Your input was invalid","failed":"You are not old enough to view this content","generic":"An error occurred, please try again","cookies":"Your browser does not support cookies, you may experience problems entering this site"}};
+    /* ]]> */
+</script>
+
+
+<script type='text/javascript' id='eio-lazy-load-js-before'>
+    var eio_lazy_vars = {"exactdn_domain":"epjftw6jo4j.exactdn.com","skip_autoscale":0,"threshold":0};
+</script>
+
+
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=630' id='eio-lazy-load-js'></script>
+<!--<script type='text/javascript' src='https://epjftw6jo4j.exactdn.com/wp-content/plugins/age-gate/public/js/age-gate-shortcode.js?ver=2.19.0' id='age-gate-sc-js'></script>-->
+<!--<script type='text/javascript' src='https://epjftw6jo4j.exactdn.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>-->
+<script type='text/javascript' src='https://www.herbalist.ml/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+
+
+<script type='text/javascript' id='contact-form-7-js-extra'>
+    /* <![CDATA[ */
+    var wpcf7 = {"api":{"root":"https:\/\/goembarc.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+    /* ]]> */
+</script>
+
+
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.3' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/themes/divi-child/custom.script.js?m=1638533474' id='custom-script-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/themes/divi-child/owl.carousel.js?m=1638533474' id='owl-script-js'></script>
+
+
+<script type='text/javascript' id='divi-custom-script-js-extra'>
+    /* <![CDATA[ */
+    var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+    var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+    var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+    var et_pb_custom = {"ajaxurl":"https:\/\/goembarc.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/herbalist.ml\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/goembarc.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"5467674204","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"6d9c01b994","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"2","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":""};
+    var et_pb_box_shadow_elements = [];
+    /* ]]> */
+</script>
+
+
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/themes/Divi/js/scripts.min.js?ver=4.14.2' id='divi-custom-script-js'></script>
+<script type='text/javascript' id='heateor_sss_sharing_js-js-before'>
+    function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = 'https://goembarc.com/wp-admin/admin-ajax.php', heateorSssCloseIconPath = 'https://epjftw6jo4j.exactdn.com/wp-content/plugins/sassy-social-share/public/../images/close.png', heateorSssPluginIconPath = 'https://epjftw6jo4j.exactdn.com/wp-content/plugins/sassy-social-share/public/../images/logo.png', heateorSssHorizontalSharingCountEnable = 0, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 0;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")}
+</script>
+
+
+<!--<script type='text/javascript' src='https://epjftw6jo4j.exactdn.com/wp-content/plugins/sassy-social-share/public/js/sassy-social-share-public.js?ver=3.3.35' id='heateor_sss_sharing_js-js'></script>-->
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/themes/Divi/core/admin/js/common.js?ver=4.14.2' id='et-core-common-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-includes/js/hoverIntent.min.js?ver=1.10.1' id='hoverIntent-js'></script>
+
+
+<script type='text/javascript' id='megamenu-js-extra'>
+    /* <![CDATA[ */
+    var megamenu = {"timeout":"300","interval":"100"};
+    /* ]]> */
+</script>
+
+
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=2.9.5' id='megamenu-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-includes/js/wp-embed.min.js?ver=5.8.2' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/plugins/divi-overlays/assets/js/jquery.exitintent.js?ver=2.9.6.5' id='divi-overlays-exit-intent-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/plugins/divi-overlays/assets/js/custom.js?ver=2.9.6.5' id='divi-overlays-custom-js-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.14.2' id='fitvids-js'></script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/61702d8df7c0440a591f2df4/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>

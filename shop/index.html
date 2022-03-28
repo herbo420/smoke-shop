@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <script type="text/javascript">
+        document.documentElement.className = 'js';
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style type="text/css">			.heateorSssInstagramBackground{background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}
+.heateor_sss_horizontal_sharing .heateorSssSharing,.heateor_sss_standard_follow_icons_container .heateorSssSharing{
+    color: #fff;
+    border-width: 0px;
+    border-style: solid;
+    border-color: transparent;
+}
+.heateor_sss_horizontal_sharing .heateorSssTCBackground{
+    color:#666;
+}
+.heateor_sss_horizontal_sharing .heateorSssSharing:hover,.heateor_sss_standard_follow_icons_container .heateorSssSharing:hover{
+    border-color: transparent;
+}
+.heateor_sss_vertical_sharing .heateorSssSharing,.heateor_sss_floating_follow_icons_container .heateorSssSharing{
+    color: #fff;
+    border-width: 0px;
+    border-style: solid;
+    border-color: transparent;
+}
+.heateor_sss_vertical_sharing .heateorSssTCBackground{
+    color:#666;
+}
+.heateor_sss_vertical_sharing .heateorSssSharing:hover,.heateor_sss_floating_follow_icons_container .heateorSssSharing:hover{
+    border-color: transparent;
+}
+
+@media screen and (max-width:783px) {.
+heateor_sss_vertical_sharing{
+    display:none!important}}
+@media screen and (max-width:783px) {
+    .heateor_sss_floating_follow_icons_container{display:none!important}}
+</style>
+
+    <meta name="robots" content="index, follow">
+
+    <script type="text/javascript">
+        let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};
+    </script>
+
+    <!-- This site is optimized with the Yoast SEO Premium plugin v16.2 (Yoast SEO v17.3) - https://yoast.com/wordpress/plugins/seo/ -->
+    <title>Herbalist Smoke Shop: Tienda #1 en accesorios 420</title>
+    <meta name="description" content="Herbalist es la tienda en línea de confianza con envío gratuito, devoluciones instantáneas y atención al cliente de primer nivel. Compre bongs de agua, pipas, vaporizadores y otros accesorios para fumar" />
+    <link rel="canonical" href="https://www.herbalist.ml/shop/" />
+
+    <link rel="icon" type="image/png" href="https://www.herbalist.ml/img/ico.png" />
+
+    <meta property="og:locale" content="en_CR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Herbalist Smoke Shop: Tienda #1 en accesorios 420" />
+    <meta property="og:description" content="Herbalist es la tienda en línea de confianza con envío gratuito, devoluciones instantáneas y atención al cliente de primer nivel. Compre bongs de agua, pipas, vaporizadores y otros accesorios para fumar" />
+    <meta property="og:url" content="https://www.herbalist.ml/shop/" />
+    <meta property="og:site_name" content="Herbalist Smoke Shop" />
+    <meta property="article:modified_time" content="2021-10-14T17:23:11+00:00" />
+    <meta property="og:image" content="https://www.herbalist.ml/img/embarc_vape_banner.jpg" />
+    <meta property="og:image:width" content="2880" />
+    <meta property="og:image:height" content="1298" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:label1" content="Est. reading time" />
+    <meta name="twitter:data1" content="14 minutes" />
+
+    <link rel='stylesheet' id='contact-form-7-css'  href='https://www.herbalist.ml/css/styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='megamenu-css'  href='https://www.herbalist.ml/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='dashicons-css'  href='https://www.herbalist.ml/css/dashicons.min.css' type='text/css' media='all' />
+
+    <link rel='stylesheet'  href='https://www.herbalist.ml/css/divi/divi-style-parent-inline-inline-css.css' type='text/css' media='all' />
+
+    <link rel='stylesheet' href='https://www.herbalist.ml/css/divi/divi-dynamic-critical-inline-css.css' type='text/css' media='all' />
+
+    <!-- custom css -->
+    <link rel='stylesheet'  href='https://www.herbalist.ml/css/custom.css?v2' type='text/css' media='all' />
+    <!-- custom css -->
+
+    <link rel='preload' id='divi-dynamic-css' href='https://www.herbalist.ml/css/et-divi-dynamic-tb-12-tb-31-2.css' as='style' media='all' onload="this.onload=null;this.rel='stylesheet'" />
+
+    <link rel='stylesheet' id='owl-slider-css'  href='https://www.herbalist.ml/css/owl.carousel.min.css?ver=1.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='divi-style-css'  href='https://www.herbalist.ml/css/divi-child/style.css?ver=1.0.0' type='text/css' media='all' />
+
+    <link rel='shortlink' href='https://www.herbalist.ml/shop/' />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBN618D1GP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EBN618D1GP');
+    </script>
+
+    <style id="et-critical-inline-css">body{color:#1c1c1c}h1,h2,h3,h4,h5,h6{color:#1c1c1c}.container,.et_pb_row,.et_pb_slider .et_pb_container,.et_pb_fullwidth_section .et_pb_title_container,.et_pb_fullwidth_section .et_pb_title_featured_container,.et_pb_fullwidth_header:not(.et_pb_fullscreen) .et_pb_fullwidth_header_container{max-width:1250px}.et_boxed_layout #page-container,.et_boxed_layout.et_non_fixed_nav.et_transparent_nav #page-container #top-header,.et_boxed_layout.et_non_fixed_nav.et_transparent_nav #page-container #main-header,.et_fixed_nav.et_boxed_layout #page-container #top-header,.et_fixed_nav.et_boxed_layout #page-container #main-header,.et_boxed_layout #page-container .container,.et_boxed_layout #page-container .et_pb_row{max-width:1410px}#main-header .nav li ul a{color:rgba(0,0,0,0.7)}.footer-widget .et_pb_widget div,.footer-widget .et_pb_widget ul,.footer-widget .et_pb_widget ol,.footer-widget .et_pb_widget label{line-height:1.7em}#et-footer-nav .bottom-nav li.current-menu-item a{color:#2ea3f2}body .et_pb_bg_layout_light.et_pb_button:hover,body .et_pb_bg_layout_light .et_pb_button:hover,body .et_pb_button:hover{border-radius:0px}@media only screen and (min-width:981px){.et_header_style_centered.et_hide_primary_logo #main-header:not(.et-fixed-header) .logo_container,.et_header_style_centered.et_hide_fixed_logo #main-header.et-fixed-header .logo_container{height:11.88px}}@media only screen and (min-width:1562px){.et_pb_row{padding:31px 0}.et_pb_section{padding:62px 0}.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper{padding-top:93px}.et_pb_fullwidth_section{padding:0}}@font-face{font-family:"CarnabyStreet-Clean";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/CarnabyStreet-Clean.otf") format("opentype")}@font-face{font-family:"ChaletNewYorkNineteenSixty";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/ChaletNewYorkNineteenSixty.ttf") format("truetype")}@font-face{font-family:"Chalet";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/Chalet-NewYorkSixty.otf") format("opentype")}@font-face{font-family:"Letter Gothic Std Bold";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/Letter-Gothic-Std-Bold.ttf") format("truetype")}@font-face{font-family:"HolidayFree";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/HolidayFree.ttf") format("truetype")}.et_pb_section_0_tb_header.et_pb_section,.et_pb_section_2_tb_header.et_pb_section{padding-top:0px;padding-bottom:0px}.et_pb_section_1_tb_header.et_pb_section{padding-top:0px;padding-bottom:0px;background-color:#131313!important}.et_pb_row_0_tb_header.et_pb_row{padding-top:10px!important;padding-bottom:10px!important;padding-top:10px;padding-bottom:10px}.et_pb_text_0_tb_header.et_pb_text{color:#FFFFFF!important}.et_pb_text_0_tb_header{line-height:27px;font-family:'CarnabyStreet-Clean',Helvetica,Arial,Lucida,sans-serif;text-transform:uppercase;font-size:23px;letter-spacing:1px;line-height:27px}.et_pb_section_3_tb_header.et_pb_section{padding-top:0px;padding-bottom:0px;background-color:#ffffff!important}.et_pb_row_1_tb_header,body #page-container .et-db #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row{width:100%}.et_pb_column_1_tb_header,.et_pb_column_3_tb_header{min-width:40%;margin:0!important}.et_pb_column_2_tb_header{max-width:20%;margin:0!important}.et_pb_image_0_tb_header{margin-top:5px!important;text-align:center}.et_pb_image_1_tb_header .et_pb_image_wrap,.et_pb_image_3_tb_header .et_pb_image_wrap,.et_pb_image_2_tb_header .et_pb_image_wrap,.et_pb_image_5_tb_header .et_pb_image_wrap,.et_pb_image_0_tb_header .et_pb_image_wrap{display:block}.et_pb_row_2_tb_header.et_pb_row{padding-top:15px!important;padding-right:15px!important;padding-bottom:15px!important;padding-left:15px!important;padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px}.et_pb_row_2_tb_header,body #page-container .et-db #et-boc .et-l .et_pb_row_2_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_2_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_2_tb_header.et_pb_row{width:100%;max-width:100%}.et_pb_column_4_tb_header,.et_pb_column_6_tb_header{max-width:30%;margin:0}.et_pb_text_1_tb_header{max-height:40px}.et_pb_column_5_tb_header{max-width:40%;margin:0}.et_pb_image_1_tb_header{max-width:100px;text-align:center}.et_pb_button_0_tb_header_wrapper .et_pb_button_0_tb_header,.et_pb_button_0_tb_header_wrapper .et_pb_button_0_tb_header:hover{padding-top:0px!important;padding-right:25px!important;padding-bottom:0px!important;padding-left:0px!important}body #page-container .et_pb_section .et_pb_button_0_tb_header{color:#1c1c1c!important;border-width:0px!important;font-size:14px;font-family:'ChaletNewYorkNineteenSixty',Helvetica,Arial,Lucida,sans-serif!important}body #page-container .et_pb_section .et_pb_button_11_tb_header:before,body #page-container .et_pb_section .et_pb_button_11_tb_header:after,body #page-container .et_pb_section .et_pb_button_10_tb_header:before,body #page-container .et_pb_section .et_pb_button_10_tb_header:after,body #page-container .et_pb_section .et_pb_button_4_tb_header:before,body #page-container .et_pb_section .et_pb_button_4_tb_header:after,body #page-container .et_pb_section .et_pb_button_9_tb_header:before,body #page-container .et_pb_section .et_pb_button_9_tb_header:after,body #page-container .et_pb_section .et_pb_button_8_tb_header:before,body #page-container .et_pb_section .et_pb_button_8_tb_header:after,body #page-container .et_pb_section .et_pb_button_2_tb_header:before,body #page-container .et_pb_section .et_pb_button_2_tb_header:after,body #page-container .et_pb_section .et_pb_button_7_tb_header:before,body #page-container .et_pb_section .et_pb_button_7_tb_header:after,body #page-container .et_pb_section .et_pb_button_5_tb_header:before,body #page-container .et_pb_section .et_pb_button_5_tb_header:after,body #page-container .et_pb_section .et_pb_button_6_tb_header:before,body #page-container .et_pb_section .et_pb_button_6_tb_header:after,body #page-container .et_pb_section .et_pb_button_3_tb_header:before,body #page-container .et_pb_section .et_pb_button_3_tb_header:after,body #page-container .et_pb_section .et_pb_button_1_tb_header:before,body #page-container .et_pb_section .et_pb_button_1_tb_header:after,body #page-container .et_pb_section .et_pb_button_0_tb_header:before,body #page-container .et_pb_section .et_pb_button_0_tb_header:after{display:none!important}.et_pb_button_0_tb_header{background:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/2021/07/shop-icon.png") no-repeat right center}.et_pb_button_5_tb_header,.et_pb_button_5_tb_header:after,.et_pb_button_11_tb_header,.et_pb_button_11_tb_header:after,.et_pb_button_9_tb_header,.et_pb_button_9_tb_header:after,.et_pb_button_8_tb_header,.et_pb_button_8_tb_header:after,.et_pb_button_0_tb_header,.et_pb_button_0_tb_header:after,.et_pb_button_4_tb_header,.et_pb_button_4_tb_header:after,.et_pb_button_3_tb_header,.et_pb_button_3_tb_header:after,.et_pb_button_7_tb_header,.et_pb_button_7_tb_header:after,.et_pb_button_1_tb_header,.et_pb_button_1_tb_header:after,.et_pb_button_6_tb_header,.et_pb_button_6_tb_header:after,.et_pb_button_2_tb_header,.et_pb_button_2_tb_header:after,.et_pb_button_10_tb_header,.et_pb_button_10_tb_header:after{transition:all 300ms ease 0ms}.et_pb_section_4_tb_header.et_pb_section,.et_pb_section_5_tb_header.et_pb_section{padding-top:0px;padding-right:20px;padding-bottom:0px;padding-left:20px}.et_pb_row_3_tb_header.et_pb_row{padding-top:0px!important;padding-bottom:0px!important;padding-top:0px;padding-bottom:0px}.et_pb_button_3_tb_header_wrapper .et_pb_button_3_tb_header,.et_pb_button_3_tb_header_wrapper .et_pb_button_3_tb_header:hover,.et_pb_button_1_tb_header_wrapper .et_pb_button_1_tb_header,.et_pb_button_1_tb_header_wrapper .et_pb_button_1_tb_header:hover,.et_pb_button_2_tb_header_wrapper .et_pb_button_2_tb_header,.et_pb_button_2_tb_header_wrapper .et_pb_button_2_tb_header:hover{padding-top:15px!important;padding-right:0px!important;padding-bottom:15px!important;padding-left:0px!important}.et_pb_button_2_tb_header_wrapper,.et_pb_button_3_tb_header_wrapper,.et_pb_button_1_tb_header_wrapper{margin-top:0px!important;margin-bottom:0px!important}body #page-container .et_pb_section .et_pb_button_1_tb_header,body #page-container .et_pb_section .et_pb_button_2_tb_header,body #page-container .et_pb_section .et_pb_button_3_tb_header{color:#1c1c1c!important;border-radius:0px;letter-spacing:-0.67px;font-size:23px;font-family:'Chalet',Helvetica,Arial,Lucida,sans-serif!important}.et_pb_button_2_tb_header,.et_pb_button_1_tb_header{border:0!important;border-bottom:1px solid #1C1C1C!important;width:100%}.et_pb_button_3_tb_header{border:0!important;width:100%}.et_pb_text_2_tb_header h2{font-family:'Chalet',Helvetica,Arial,Lucida,sans-serif;font-size:90px;letter-spacing:-3.72px;line-height:40px}.et_pb_text_2_tb_header{background-color:#dee098;position:relative;border-radius:9px 9px 9px 9px;overflow:hidden;padding-top:40px!important;padding-bottom:30px!important;margin-top:20px!important;margin-bottom:20px!important;max-width:380px}.et_pb_section_7_tb_header.et_pb_section,.et_pb_section_6_tb_header.et_pb_section{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px}.et_pb_section_7_tb_header,.et_pb_section_6_tb_header{background:linear-gradient(180deg,#ffffff 0%,#8F9DB3 100%)}.et_pb_row_4_tb_header.et_pb_row{padding-top:0px!important;padding-right:25px!important;padding-bottom:40px!important;padding-left:25px!important;padding-top:0px;padding-right:25px;padding-bottom:40px;padding-left:25px}.et_pb_text_3_tb_header.et_pb_text,.et_pb_text_4_tb_header.et_pb_text,.et_pb_text_5_tb_header.et_pb_text{color:#1c1c1c!important}.et_pb_text_3_tb_header,.et_pb_text_4_tb_header{line-height:18px;font-family:'Letter Gothic Std Bold',Helvetica,Arial,Lucida,sans-serif;font-size:12px;letter-spacing:0.2px;line-height:18px;border-bottom-width:1px;border-bottom-color:rgba(49,49,49,0.65);padding-top:20px!important;padding-bottom:25px!important;margin-bottom:0px!important}.et_pb_text_5_tb_header h3,.et_pb_text_3_tb_header h3,.et_pb_text_4_tb_header h3{font-family:'HolidayFree',Helvetica,Arial,Lucida,sans-serif;font-size:29px;color:#1c1c1c!important;letter-spacing:-0.11px;line-height:51px}.et_pb_text_5_tb_header{line-height:18px;font-family:'Letter Gothic Std Bold',Helvetica,Arial,Lucida,sans-serif;font-size:12px;letter-spacing:0.2px;line-height:18px;border-bottom-width:1px;border-bottom-color:rgba(49,49,49,0.65);padding-top:20px!important;padding-bottom:25px!important}.et_pb_button_4_tb_header_wrapper .et_pb_button_4_tb_header,.et_pb_button_4_tb_header_wrapper .et_pb_button_4_tb_header:hover{padding-top:4px!important;padding-right:21px!important;padding-bottom:4px!important;padding-left:21px!important}.et_pb_button_4_tb_header_wrapper{margin-bottom:15px!important}body #page-container .et_pb_section .et_pb_button_4_tb_header{color:#FFFFFF!important;border-width:0px!important;border-radius:18px;letter-spacing:-0.29px;font-size:17px;font-family:'Chalet',Helvetica,Arial,Lucida,sans-serif!important;background-color:#ef7753}.et_pb_button_8_tb_header_wrapper .et_pb_button_8_tb_header,.et_pb_button_8_tb_header_wrapper .et_pb_button_8_tb_header:hover,.et_pb_button_6_tb_header_wrapper .et_pb_button_6_tb_header,.et_pb_button_6_tb_header_wrapper .et_pb_button_6_tb_header:hover,.et_pb_button_9_tb_header_wrapper .et_pb_button_9_tb_header,.et_pb_button_9_tb_header_wrapper .et_pb_button_9_tb_header:hover,.et_pb_button_7_tb_header_wrapper .et_pb_button_7_tb_header,.et_pb_button_7_tb_header_wrapper .et_pb_button_7_tb_header:hover,.et_pb_button_11_tb_header_wrapper .et_pb_button_11_tb_header,.et_pb_button_11_tb_header_wrapper .et_pb_button_11_tb_header:hover,.et_pb_button_5_tb_header_wrapper .et_pb_button_5_tb_header,.et_pb_button_5_tb_header_wrapper .et_pb_button_5_tb_header:hover,.et_pb_button_10_tb_header_wrapper .et_pb_button_10_tb_header,.et_pb_button_10_tb_header_wrapper .et_pb_button_10_tb_header:hover{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important}.et_pb_button_8_tb_header_wrapper,.et_pb_button_7_tb_header_wrapper,.et_pb_button_5_tb_header_wrapper,.et_pb_button_10_tb_header_wrapper,.et_pb_button_9_tb_header_wrapper,.et_pb_button_6_tb_header_wrapper{margin-bottom:5px!important}body #page-container .et_pb_section .et_pb_button_10_tb_header,body #page-container .et_pb_section .et_pb_button_7_tb_header,body #page-container .et_pb_section .et_pb_button_6_tb_header,body #page-container .et_pb_section .et_pb_button_11_tb_header,body #page-container .et_pb_section .et_pb_button_9_tb_header,body #page-container .et_pb_section .et_pb_button_5_tb_header,body #page-container .et_pb_section .et_pb_button_8_tb_header{color:#1c1c1c!important;border-width:0px!important;letter-spacing:-0.49px;font-size:17px;font-family:'Chalet',Helvetica,Arial,Lucida,sans-serif!important}.et_pb_button_11_tb_header_wrapper{margin-bottom:30px!important}.et_pb_image_2_tb_header,.et_pb_image_3_tb_header,.et_pb_image_5_tb_header{text-align:left;margin-left:0}@media only screen and (min-width:981px){.et_pb_row_2_tb_header,.et_pb_section_4_tb_header,.et_pb_section_5_tb_header{display:none!important}}@media only screen and (max-width:980px){.et_pb_text_3_tb_header,.et_pb_text_4_tb_header,.et_pb_text_5_tb_header{border-bottom-width:1px;border-bottom-color:rgba(49,49,49,0.65)}}@media only screen and (min-width:768px) and (max-width:980px){.et_pb_row_1_tb_header{display:none!important}}@media only screen and (max-width:767px){.et_pb_text_0_tb_header{font-size:18px}.et_pb_row_1_tb_header{display:none!important}.et_pb_text_3_tb_header,.et_pb_text_4_tb_header,.et_pb_text_5_tb_header{border-bottom-width:1px;border-bottom-color:rgba(49,49,49,0.65)}}@font-face{font-family:"CarnabyStreet-Clean";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/CarnabyStreet-Clean.otf") format("opentype")}@font-face{font-family:"ChaletNewYorkNineteenSixty";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/ChaletNewYorkNineteenSixty.ttf") format("truetype")}@font-face{font-family:"Chalet";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/Chalet-NewYorkSixty.otf") format("opentype")}@font-face{font-family:"Letter Gothic Std Bold";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/Letter-Gothic-Std-Bold.ttf") format("truetype")}@font-face{font-family:"HolidayFree";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/HolidayFree.ttf") format("truetype")}@font-face{font-family:"MonoSpec Bold";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/MonoSpec-Bold.otf") format("opentype")}@font-face{font-family:"SFNSDisplayCondensed";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/SFNSDisplayCondensed-Regular.otf") format("opentype")}@font-face{font-family:"ChaletLondonNineteenSixty";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/ChaletLondonNineteenSixty.ttf") format("truetype")}@font-face{font-family:"CarnabyStreet-Clean";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/CarnabyStreet-Clean.otf") format("opentype")}@font-face{font-family:"ChaletNewYorkNineteenSixty";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/ChaletNewYorkNineteenSixty.ttf") format("truetype")}@font-face{font-family:"Chalet";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/Chalet-NewYorkSixty.otf") format("opentype")}@font-face{font-family:"Letter Gothic Std Bold";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/Letter-Gothic-Std-Bold.ttf") format("truetype")}@font-face{font-family:"HolidayFree";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/HolidayFree.ttf") format("truetype")}@font-face{font-family:"MonoSpec Bold";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/MonoSpec-Bold.otf") format("opentype")}@font-face{font-family:"SFNSDisplayCondensed";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/SFNSDisplayCondensed-Regular.otf") format("opentype")}@font-face{font-family:"ChaletLondonNineteenSixty";font-display:swap;src:url("https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/et-fonts/ChaletLondonNineteenSixty.ttf") format("truetype")}</style>
+    <link rel="stylesheet" id="et-core-unified-2-cached-inline-styles" href="https://www.herbalist.ml/css/et-core-unified-2.min.css?v3" />
+    <link rel="preload" as="style" id="et-core-unified-tb-12-tb-31-deferred-2-cached-inline-styles" href="https://www.herbalist.ml/css/et-core-unified-tb-12-tb-31-deferred-2.min.css?v2" onload="this.onload=null;this.rel='stylesheet';" />
+
+    <style type="text/css">/** Mega Menu CSS: fs **/</style>
+
+</head>
+
+
+<body class="home page-template-default page page-id-2 et-tb-has-template et-tb-has-header et-tb-has-footer mega-menu-secondary-menu mega-menu-primary-menu et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
+<div id="page-container">
+    <div id="et-boc" class="et-boc">
+
+        <header class="et-l et-l--header">
+            <div class="et_builder_inner_content et_pb_gutters3">
+                <div class="et_pb_section et_pb_section_1_tb_header et_pb_with_background et_section_regular" >
+
+                    <div class="et_pb_row et_pb_row_0_tb_header">
+                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                            <div class="et_pb_module et_pb_text et_pb_text_0_tb_header et_clickable  et_pb_text_align_center et_pb_bg_layout_light">
+                                <div class="et_pb_text_inner"><p>Envíos gratis 🇨🇷</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="et_pb_section et_pb_section_3_tb_header header-bar et_pb_with_background et_section_regular">
+
+                    <div class="et_pb_row et_pb_row_1_tb_header">
+                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_1_tb_header  et_pb_css_mix_blend_mode_passthrough">
+
+                            <div class="et_pb_module et_pb_code et_pb_code_0_tb_header  et_pb_text_align_left">
+
+                                <div class="et_pb_code_inner">
+
+                                    <div id="mega-menu-wrap-primary-menu" class="mega-menu-wrap">
+                                        <div class="mega-menu-toggle">
+                                            <div class="mega-toggle-blocks-left">
+
+                                            </div>
+
+                                            <div class="mega-toggle-blocks-center">
+
+                                            </div>
+
+                                            <div class="mega-toggle-blocks-right">
+                                                <div class='mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0' id='mega-toggle-block-0'>
+                                                    <button aria-label="Toggle Menu" class="mega-toggle-animated mega-toggle-animated-slider" type="button" aria-expanded="false">
+                  <span class="mega-toggle-animated-box">
+                    <span class="mega-toggle-animated-inner"></span>
+                  </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- MENU DESKTOP -->
+                                        <ul id="mega-menu-primary-menu" class="mega-menu max-mega-menu mega-menu-horizontal" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="0" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="768" data-unbind="true" data-mobile-state="collapse_all" data-hover-intent-timeout="300" data-hover-intent-interval="100">
+                                            <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-139" id="mega-menu-item-139">
+                                                <a class="mega-menu-link" href="https://www.herbalist.ml/shop/bongs/" tabindex="0">Bongs</a>
+                                            </li>
+                                            <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-1859" id="mega-menu-item-1859">
+                                                <a class="mega-menu-link" href="https://www.herbalist.ml/shop/pipas/" tabindex="0">Pipas</a>
+                                            </li>
+                                            <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-611" id="mega-menu-item-611">
+                                                <a class="mega-menu-link" href="https://www.herbalist.ml/shop/vapes/" tabindex="0">Vapes</a>
+                                            </li>
+                                            <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-611" id="mega-menu-item-611">
+                                                <a class="mega-menu-link" href="https://www.herbalist.ml/shop/accesorios/" tabindex="0">Accesorios</a>
+                                            </li>
+                                            <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-611" id="mega-menu-item-611">
+                                                <a class="mega-menu-link" href="https://www.herbalist.ml/cultivation/" tabindex="0">Cultivo</a>
+                                            </li>
+                                            <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-611" id="mega-menu-item-611">
+                                                <a class="mega-menu-link" href="https://www.herbalist.ml/cbd/" tabindex="0">CBD</a>
+                                            </li>
+                                        </ul>
+                                        <!-- MENU DESKTOP -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode_passthrough">
+
+
+                            <div class="et_pb_module et_pb_image et_pb_image_0_tb_header">
+                                <a href="https://www.herbalist.ml/"><span class="et_pb_image_wrap "><img src="https://www.herbalist.ml/img/herbalist-logo.jpg" alt="herbalist smoke shop" title="logo" class="wp-image-16" /></span></a>
+                            </div>
+
+                        </div>
+
+                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_3_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                            <div class="et_pb_module et_pb_code et_pb_code_1_tb_header">
+
+
+                                <div class="et_pb_code_inner"><div id="mega-menu-wrap-secondary-menu" class="mega-menu-wrap"><div class="mega-menu-toggle"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class='mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0' id='mega-toggle-block-0'><button aria-label="Toggle Menu" class="mega-toggle-animated mega-toggle-animated-slider" type="button" aria-expanded="false">
+                  <span class="mega-toggle-animated-box">
+                    <span class="mega-toggle-animated-inner"></span>
+                  </span>
+                                </button>
+                                </div>
+                                </div>
+                                </div>
+
+                                    <ul id="mega-menu-secondary-menu" class="" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="0" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="768" data-unbind="true" data-mobile-state="collapse_all" data-hover-intent-timeout="300" data-hover-intent-interval="100">
+                                        <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-1858' id='mega-menu-item-1858'>
+
+
+
+                                            <!--  <div class="et_pb_column et_pb_column_1_3 et_pb_column_6_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                                 <div class="et_pb_button_module_wrapper et_pb_button_0_tb_header_wrapper et_pb_button_alignment_right et_pb_module ">
+                                                     <a id="slide-in-open-shop" class="et_pb_button et_pb_button_0_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/smoke-shop/">Shop</a>
+                                                 </div>
+                                             </div>
+                                       -->
+
+                                            <a class="mega-menu-link" target="_blank" href="https://wa.me/50662609063/?text=" tabindex="0"> <i class="fab fa-whatsapp sap-icon"></i> </a>
+
+                                        </li>
+
+
+                                        <!--<li class='mega-box mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-515 box' id='mega-menu-item-515'>
+
+                                            <a class="mega-menu-link" href="#" aria-haspopup="true" aria-expanded="false" tabindex="0" style="display: none!important;">Shop Cannabis<span class="mega-indicator"></span> </a>
+
+                                            <ul class="mega-sub-menu">
+                                                <li class='mega-menu-row' id='mega-menu-515-0'>
+                                                    <ul class="mega-sub-menu">
+                                                        <li class='mega-menu-column mega-sub-menu-bg mega-shop mega-menu-columns-6-of-12 sub-menu-bg shop' id='mega-menu-515-0-0'>
+                                                            <ul class="mega-sub-menu">
+                                                                <li class='mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-4' id='mega-menu-item-custom_html-4'><div class="textwidget custom-html-widget"><a href="/deals">
+                                                                    <h4 class="mega-block-title">Deal$</h4>
+                                                                    <img alt="img-deals" src="https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/2021/08/Deals-Graphic_fixed.svg" />
+                                                                </a></div></li>		</ul>
+                                                        </li><li class='mega-menu-column mega-menu-columns-6-of-12' id='mega-menu-515-0-1'>
+                                                        <ul class="mega-sub-menu">
+                                                            <li class='mega-menu-item mega-menu-item-type-widget widget_nav_menu mega-menu-item-nav_menu-4' id='mega-menu-item-nav_menu-4'><div class="menu-explore-menus-container">
+                                                                <ul id="menu-explore-menus-1" class="menu">
+                                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1783"><a href="">Cookies.co</a></li>
+                                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1782"><a href="">Royal Queen Seeds</a></li>
+                                                                </ul></div></li>		</ul>
+                                                    </li>	</ul>
+                                                </li>
+                                            </ul>
+                                        </li>-->
+
+
+                                    </ul>
+
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="et_pb_row et_pb_row_2_tb_header">
+
+                        <!-- menu btn -->
+                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_4_tb_header  et_pb_css_mix_blend_mode_passthrough">
+                            <div id="slide-in-open" class="et_pb_module et_pb_text et_pb_text_1_tb_header  et_pb_text_align_left et_pb_bg_layout_light">
+
+                                <div class="et_pb_text_inner"><span class="line line-1"></span><br />
+                                    <span class="line line-2"></span><br />
+                                    <span class="line line-3"></span></div>
+                            </div>
+                        </div>
+                        <!-- menu btn -->
+
+
+                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_5_tb_header  et_pb_css_mix_blend_mode_passthrough">
+                            <div class="et_pb_module et_pb_image et_pb_image_1_tb_header">
+                                <a href="https://www.herbalist.ml/"><span class="et_pb_image_wrap "><img src="https://www.herbalist.ml/img/herbalist-logo.jpg" alt="herbalist smoke shop logo" title="logo" class="wp-image-16" /></span></a>
+                            </div>
+                        </div>
+
+                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_6_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                            <div class="et_pb_button_module_wrapper et_pb_button_0_tb_header_wrapper et_pb_button_alignment_right et_pb_module ">
+                                <a id="slide-in-open-shop" class="et_pb_button et_pb_button_0_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/shop/">Comprar</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!--
+                <div class="et_pb_section et_pb_section_5_tb_header slide-in-menu-container-shop et_section_regular" >
+                <div class="et_pb_row et_pb_row_3_tb_header">
+                    <div class="et_pb_column et_pb_column_4_4 et_pb_column_7_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                        <div class="et_pb_button_module_wrapper et_pb_button_1_tb_header_wrapper  et_pb_module ">
+                            <a class="et_pb_button et_pb_button_1_tb_header et_pb_bg_layout_light" href="#">Shop Alameda</a>
+                        </div>
+                        <div class="et_pb_button_module_wrapper et_pb_button_2_tb_header_wrapper  et_pb_module ">
+                        <a class="et_pb_button et_pb_button_2_tb_header et_pb_bg_layout_light" href="#">Shop Martinez</a>
+                    </div>
+                        <div class="et_pb_button_module_wrapper et_pb_button_3_tb_header_wrapper  et_pb_module ">
+                        <a class="et_pb_button et_pb_button_3_tb_header et_pb_bg_layout_light" href="#">Shop Tahoe</a>
+                    </div>
+
+                        <div class="et_pb_module et_pb_text et_pb_text_2_tb_header et_clickable  et_pb_text_align_center et_pb_bg_layout_light">
+                            <div class="et_pb_text_inner">
+                                <h2>Deal$</h2>
+                                <p><img loading="lazy" src="https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/2021/08/Deals-Graphic_fixed.svg" alt="" class="wp-image-427 alignnone size-medium" width="255" height="49" /></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            -->
+
+
+
+
+                <div class="et_pb_section et_pb_section_7_tb_header slide-in-menu-container header-bar et_section_regular" >
+
+                    <!-- MENU MOBILE -->
+                    <div class="et_pb_row et_pb_row_4_tb_header">
+                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_8_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+                            <div class="et_pb_button_module_wrapper et_pb_button_8_tb_header_wrapper  et_pb_module ">
+                                <a class="et_pb_button et_pb_button_8_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/shop/bongs/">Bongs</a>
+                            </div>
+
+                            <div class="et_pb_button_module_wrapper et_pb_button_9_tb_header_wrapper  et_pb_module ">
+                                <a class="et_pb_button et_pb_button_9_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/shop/pipas/">Pipas</a>
+                            </div>
+
+                            <div class="et_pb_button_module_wrapper et_pb_button_10_tb_header_wrapper  et_pb_module ">
+                                <a class="et_pb_button et_pb_button_10_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/shop/vapes/">Vapes</a>
+                            </div>
+
+                            <div class="et_pb_button_module_wrapper et_pb_button_10_tb_header_wrapper  et_pb_module ">
+                                <a class="et_pb_button et_pb_button_10_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/shop/picadoras/">Grinders</a>
+                            </div>
+
+                            <div class="et_pb_button_module_wrapper et_pb_button_8_tb_header_wrapper  et_pb_module ">
+                                <a class="et_pb_button et_pb_button_8_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/cbd/">CBD</a>
+                            </div>
+
+                            <div class="et_pb_button_module_wrapper et_pb_button_8_tb_header_wrapper  et_pb_module ">
+                                <a class="et_pb_button et_pb_button_8_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/cultivation/">Cultivo</a>
+                            </div>
+
+                            <div class="et_pb_button_module_wrapper et_pb_button_11_tb_header_wrapper  et_pb_module ">
+                                <a class="et_pb_button et_pb_button_11_tb_header et_pb_bg_layout_light" href="https://www.herbalist.ml/shop/accesorios/">Accesorios</a>
+                            </div>
+
+
+
+                            <div class="et_pb_module et_pb_image et_pb_image_2_tb_header inline-block">
+                                <a href="https://wa.me/50662609063/?text=" target="_blank" style="color: black !important;">
+                                    <i class="fab fa-whatsapp sap-icon"></i>
+                                </a>
+                            </div>
+
+                            <!--<div class="et_pb_module et_pb_image et_pb_image_2_tb_header inline-block">
+                                <a href="https://www.tiktok.com/@herbalist" target="_blank"><span class="et_pb_image_wrap "><img src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/tik.svg" alt="tik tok" title="tik" class="wp-image-29 lazyloaded" data-src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/tik.svg"><noscript><img src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/tik.svg" alt="tik" title="tik" class="wp-image-29" data-eio="l" /></noscript></span></a>
+                            </div> -->
+
+                            <div class="et_pb_module et_pb_image et_pb_image_3_tb_header inline-block">
+                                <a href="https://www.instagram.com/herbalist.ml/" target="_blank"><span class="et_pb_image_wrap "><img src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/insta.svg" alt="herbalist instagram" title="insta" class="wp-image-28 lazyloaded" data-src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/insta.svg"><noscript><img src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/insta.svg" alt="insta" title="insta" class="wp-image-28" data-eio="l" /></noscript></span></a>
+                            </div>
+
+                            <div class="et_pb_module et_pb_image et_pb_image_3_tb_header inline-block">
+                                <a href="https://www.facebook.com/herbalist.ml/" target="_blank">
+                                    <span class="et_pb_image_wrap ">
+                                 <i class="fab fa-facebook sap-icon" style="color: black;"></i>
+                                </span>
+                                </a>
+                            </div>
+
+
+                            <!--
+                                                        <div class="et_pb_module et_pb_image et_pb_image_5_tb_header inline-block">
+                                                            <a href="https://twitter.com/herbalist?lang=es" target="_blank"><span class="et_pb_image_wrap "><img src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/tw.svg" alt="herbalist twitter" title="tw" class="wp-image-30 lazyloaded" data-src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/tw.svg"><noscript><img src="https://epjftw6jo4j.exactdn.com/wp-content/uploads/2021/07/tw.svg" alt="tw" title="tw" class="wp-image-30" data-eio="l" /></noscript></span></a>
+                                                        </div>
+                            -->
+
+
+
+
+                        </div>
+                    </div>
+                    <!-- MENU MOBILE -->
+
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <div id="et-main-area">
+
+            <div id="main-content">
+
+
+                <article id="post-2" class="post-2 page type-page status-publish has-post-thumbnail hentry">
+
+
+                    <div class="entry-content">
+                        <div class="et-l et-l--post">
+                            <div class="et_builder_inner_content et_pb_gutters3">
+
+                                <!--<div class="et_pb_section et_pb_section_0 et_section_regular" >
+
+                                    <div class="et_pb_row et_pb_row_0 et_pb_row_fullwidth">
+                                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                            <div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+                                                <div class="et_pb_text_inner"><div class="feature_slider" id="feature_slider">
+                                                    <div class="owl-carousel owl-theme"><div class="owl-slider item">
+                                                        <div class="feature-slider " style="background-image: url(https://www.herbalist.ml/img/embarc_vape_banner.jpg)">
+                                                            <div class="slider-content et_pb_row">
+                                                                <h2>Encuentra todo <br>
+                                                                    lo que necesitas para las 420</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+                                                    <script>
+                                                        jQuery(document).ready(function() {
+                                                            jQuery(".feature_slider .owl-theme").owlCarousel({
+                                                                items: 1,
+                                                                loop: true,
+                                                                nav: true,
+                                                                dots: true,
+                                                                dotsEach: true,
+                                                                autoplay: false,
+                                                                // autoplayTimeout: varAutoTime,
+                                                                // autoplay:false,
+                                                                // autoplayTimeout:3000,
+                                                                // autoplayHoverPause:false,
+                                                                // responsiveClass:true,
+                                                            });
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>-->
+
+
+                                <div class="et_pb_section et_pb_section_1 et_pb_with_background et_section_regular" >
+
+
+                                    <div class="et_pb_row et_pb_row_1">
+                                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                            <div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner"><h1>Tienda #1 en accesorios 420</h1></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="et_pb_row et_pb_row_2">
+
+                                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+                                            <div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+                                                <div class="et_pb_text_inner"><div class="key-shop-list"><div class="shop-module">
+                                                    <div class="shop-content">
+                                                        <h2>Bongs</h2>
+                                                        <div class="shop-image">
+                                                            <a href="https://www.herbalist.ml/shop/bongs/"><img src="https://www.herbalist.ml/img/icons/bong-icon.jpg" alt="bongs" /></a>
+                                                        </div>
+
+                                                        <p>
+                                                            En nuestra tienda encontrarás tu próximo bong o pipa! Tenemos muchos tipos de pipas y bongs a la venta.
+                                                        </p>
+
+                                                        <a class="more" href="https://www.herbalist.ml/shop/bongs/" target="" >Explorar colección</a>
+                                                    </div>
+                                                </div><div class="shop-module">
+                                                    <div class="shop-content">
+                                                        <h2>Pipas</h2>
+                                                        <div class="shop-image">
+                                                            <a href="https://www.herbalist.ml/shop/pipas/"><img src="https://www.herbalist.ml/img/icons/pipa-icon.jpg" alt="pipas" /></a>
+                                                        </div>
+                                                        <p>
+                                                            Las pipas de vidrio son la forma más práctica y rápida para fumar hierba. La mayoría de nuestras pipas están sopladas a mano y vienen en colores y diseños especiales.
+                                                        </p>
+                                                        <a class="more" href="https://www.herbalist.ml/shop/pipas/" target="">Explorar colección</a></div>
+                                                </div>
+                                                    <div class="shop-module">
+                                                        <div class="shop-content">
+                                                            <h2>Vapes</h2>
+                                                            <div class="shop-image">
+                                                                <a href="https://www.herbalist.ml/shop/vapes/"><img src="https://www.herbalist.ml/img/icons/vape-icon.jpg" alt="vaporizadores" /></a>
+                                                            </div>
+                                                            <p>
+                                                                Si bien el vapeo ha existido durante años, recientemente se ha disparado en popularidad como una forma más pura y saludable de disfrutar el fumado sin la necesidad de fumar a combustión.
+                                                            </p>
+                                                            <a class="more" href="https://www.herbalist.ml/shop/vapes/" target="">Explorar colección</a>
+                                                        </div>
+                                                    </div><div class="shop-module">
+                                                        <div class="shop-content">
+                                                            <h2>Grinders</h2>
+                                                            <div class="shop-image">
+                                                                <a href="https://www.herbalist.ml/shop/picadoras/"><img src="https://www.herbalist.ml/img/icons/grinder-icon.jpg" alt="grinders" /></a>
+                                                            </div>
+                                                            <p>
+                                                                El grinder es una de las herramientas más importantes que puede tener cualquier stoner. Para moler esas hierbas secas y hacerlas perfectas para un humo suave, se necesita un grinder fuerte.
+                                                            </p>
+                                                            <a class="more" href="https://www.herbalist.ml/shop/picadoras/" target="">Explorar colección</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="et_pb_section et_pb_section_2 et_pb_with_background et_section_regular" >
+
+                                </div>
+
+                                <div class="et_pb_section et_pb_section_3 et_section_regular" >
+
+                                    <div class="et_pb_row et_pb_row_8">
+                                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                            <div class="et_pb_module et_pb_code et_pb_code_1  et_pb_text_align_center">
+
+
+                                                <!--<div class="et_pb_code_inner">
+                                                    <a class="btn btn--black" href="#">
+                                                    <span class="text">All Journal Entries</span>
+                                                    <span class="bg"></span>
+                                                </a>
+                                                </div>-->
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </article>
+
+
+
+            </div>
+
+            <!-- footer 1 -->
+            <footer class="et-l et-l--footer">
+                <div class="et_builder_inner_content et_pb_gutters3">
+                    <div class="et_pb_section et_pb_section_1_tb_footer cus-animate-section et_section_regular" >
+
+
+
+
+                        <div class="et_pb_row et_pb_row_0_tb_footer et_pb_row_fullwidth cus-animate-wrap">
+                            <div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                <div class="et_pb_module et_pb_text et_pb_text_0_tb_footer cus-animate  et_pb_text_align_center et_pb_bg_layout_light">
+                                    <div class="et_pb_text_inner"><p>ACCESORIOS PARA FUMAR EN COSTA RICA• ACCESORIOS PARA FUMAR EN COSTA RICA• ACCESORIOS PARA FUMAR EN COSTA RICA• ACCESORIOS PARA FUMAR EN COSTA RICA• ACCESORIOS PARA FUMAR EN COSTA RICA• ACCESORIOS PARA FUMAR EN COSTA RICA• ACCESORIOS PARA FUMAR EN COSTA RICA• ACCESORIOS PARA FUMAR EN COSTA RICA• ACCESORIOS PARA FUMAR EN COSTA RICA•</p></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div><div class="et_pb_section et_pb_section_3_tb_footer et_section_regular" >
+
+
+
+
+                    <div class="et_pb_row et_pb_row_1_tb_footer et_pb_gutters4">
+                        <div class="et_pb_column et_pb_column_1_2 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+
+
+                            <div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+                                <div class="et_pb_text_inner"><h3>Herbalist es sinónimo de comunidad y cultura.</h3>
+
+                                    <p>
+                                        <span>Nuestra smoke shop se dedica a garantizar que todos puedan obtener accesorios 420 de alta calidad pero asequibles. Somos la vape shop online #1 para comprar accesorios para fumar a buen precio y vendemos las mejores marcas como Raw, Puffco, Grav Labs y Empire Glass.<br><br>
+
+                                           <b>Nuestros productos están destinados únicamente al tabaco o al uso legal. Debe tener 18 años o más para navegar por este sitio web y comprar nuestros productos.</b>
+                                        </span>
+                                    </p>
+                                    <div>
+
+                                    </div>
+                                    <!-- <div>
+                                         Our boxes are packed with hand-selected products to ensure you are getting the highest quality materials for your smoking experience. You can opt for the Herbalist Pack, filled with 7+ essential products for your smoking needs, or you can choose to go for the Onfroze Box, which contains a mixture of both glass and paper products—and even one of our unique, handpicked glass pieces we offer here at Herbalist. At only a small price increase from the Onfroze Pack, this is quite a value that is fit for any true smoker and one that you surely won’t want to pass up.
+                                     </div>-->
+
+                                    <p><span></span></p>
+                                    <p><span></span></p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--<div class="et_pb_with_border et_pb_column_1_2 et_pb_column et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                        <div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_2_tb_footer et_clickable  et_pb_text_align_left et_pb_bg_layout_light">
+
+                            <div class="et_pb_text_inner"><h2>Stay Updated</h2>
+                            </div>
+
+                        </div>
+
+
+                        <div class="et_pb_module et_pb_text et_pb_text_3_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+                        <div class="et_pb_text_inner">
+                            <p>Get cash back on each purchase and access to exclusive deals, new arrivals and more.</p>
+
+
+
+                        </div>
+                    </div>
+                    </div>-->
+
+
+                    </div><div class="et_pb_row et_pb_row_2_tb_footer foot-menus et_pb_gutters1 et_pb_row--with-menu">
+                    <div class="et_pb_column et_pb_column_4_4 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
+
+
+                        <div class="et_pb_module et_pb_image et_pb_image_0_tb_footer et_pb_image_sticky">
+
+
+                            <a href="https://www.herbalist.ml/">
+                            <span class="et_pb_image_wrap ">
+                            <img src="https://www.herbalist.ml/img/ig-logo.jpg?v476" alt="herbalist smoke shop" title="logo" class="wp-image-16" />
+                            </span>
+                            </a>
+
+                        </div>
+                        <div class="et_pb_module et_pb_menu et_pb_menu_0_tb_footer et_pb_bg_layout_light  et_pb_text_align_left et_dropdown_animation_fade et_pb_menu--without-logo et_pb_menu--style-left_aligned">
+
+
+                            <div class="et_pb_menu_inner_container clearfix">
+
+
+
+                                <!--<div class="et_pb_menu__wrap">
+                                    <div class="et_pb_menu__menu">
+                                        <nav class="et-menu-nav"><ul id="menu-footer-menu" class="et-menu nav"><li id="menu-item-248" class="et_pb_menu_page_id-167 menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a href="https://goembarc.com/about/">About Us</a></li>
+                                            <li id="menu-item-1835" class="et_pb_menu_page_id-1828 menu-item menu-item-type-post_type menu-item-object-page menu-item-1835"><a href="https://goembarc.com/faq/">FAQ</a></li>
+                                            <li id="menu-item-246" class="et_pb_menu_page_id-221 menu-item menu-item-type-post_type menu-item-object-page menu-item-246"><a href="https://goembarc.com/contact/">Contact</a></li>
+                                            <li id="menu-item-247" class="et_pb_menu_page_id-215 menu-item menu-item-type-post_type menu-item-object-page menu-item-247"><a href="https://goembarc.com/careers/">Careers</a></li>
+                                            <li id="menu-item-1862" class="et_pb_menu_page_id-161 menu-item menu-item-type-post_type menu-item-object-page menu-item-1862"><a href="https://goembarc.com/radio/">Radio</a></li>
+                                        </ul></nav>
+                                    </div>
+
+
+                                    <div class="et_mobile_nav_menu">
+                                        <div class="mobile_nav closed">
+                                            <span class="mobile_menu_bar"></span>
+                                        </div>
+                                    </div>
+                                </div>-->
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                    <div class="et_pb_row et_pb_row_3_tb_footer foot-icons">
+                        <div class="et_pb_column et_pb_column_1_2 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+                            <div class="et_pb_module et_pb_text et_pb_text_6_tb_footer inline-block  et_pb_text_align_left et_pb_bg_layout_light">
+                                <div class="et_pb_text_inner">
+                                    <p>© 2022 Herbalist® Smoke Shop | Todos los Derechos Reservados.<hr></p>
+                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Tranquilino Sáenz Flores, Heredia Costa Rica.</p>
+
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="et_pb_module et_pb_text et_pb_text_7_tb_footer inline-block  et_pb_text_align_left et_pb_bg_layout_light">
+                                <div class="et_pb_text_inner">
+                                    <a href="mailto:shop@herbalist.ml" target="_blank">shop@herbalist.ml</a> <a href="https://www.herbalist.ml/privacy-policy/">Política de Privacidad</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="et_pb_column et_pb_column_1_2 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                            <!--div class="et_pb_module et_pb_image et_pb_image_1_tb_footer">
+                                <a href="https://www.tiktok.com/@onfrozestore?" target="_blank"><span class="et_pb_image_wrap "><img src="https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/2021/07/tik.svg" alt="herbalist tik tok" title="tik" class="wp-image-29" /></span></a>
+                            </div>-->
+
+                            <!--<div class="et_pb_module et_pb_image et_pb_image_1_tb_footer">
+                                <a href="https://wa.me/50662609063/?text=" target="_blank" style="color: black !important;">
+                                    <i class="fab fa-whatsapp sap-icon"></i>
+                                </a>
+                            </div>-->
+
+                            <div class="et_pb_module et_pb_image et_pb_image_2_tb_footer">
+                                <a href="https://www.instagram.com/herbalist.ml/" target="_blank"><span class="et_pb_image_wrap "><i class="fab fa-instagram sap-icon" style="color: black;"></i></span>
+                                </a>
+                            </div>
+
+                            <div class="et_pb_module et_pb_image et_pb_image_3_tb_footer">
+                                <a href="https://www.facebook.com/herbalist.ml/" target="_blank"><span class="et_pb_image_wrap "><i class="fab fa-facebook sap-icon" style="color: black;"></i></span>
+                                </a>
+                            </div>
+
+                            <!--<div class="et_pb_module et_pb_image et_pb_image_3_tb_footer">
+                                <a href="https://twitter.com/embarcsupply?lang=en" target="_blank"><span class="et_pb_image_wrap ">
+                                <img src="https://35z8452ah9qg306w6z5m7xx1-wpengine.netdna-ssl.com/wp-content/uploads/2021/07/tw.svg" alt="herbalist twitter" title="tw" class="wp-image-30" /></span></a>
+                            </div>-->
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+
+
+
+                </div>		</div>
+            </footer>
+            <!-- footer 1 -->
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        jQuery(".cus-animate-section").show("slow");
+        // jQuery(".cus-animate-section").addClass("cus-animation");
+    });
+</script>
+
+
+<script type='text/javascript' src='https://www.herbalist.ml/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+
+<script type='text/javascript' id='jquery-js-after'>
+    jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});
+</script>
+
+<script type='text/javascript' src='https://www.herbalist.ml/js/regenerator-runtime.min.js' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/js/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/themes/divi-child/custom.script.js' id='custom-script-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/themes/divi-child/owl.carousel.js' id='owl-script-js'></script>
+
+<script type='text/javascript' id='divi-custom-script-js-extra'>
+    /* <![CDATA[ */
+    var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+    var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+    var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+    var et_pb_custom = {"ajaxurl":"https:\/\/herbalist.ml\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/herbalist.ml\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/herbalist.ml\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"0b85cff019","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"d15cffcc60","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"2","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":""};
+    var et_pb_box_shadow_elements = [];
+    /* ]]> */
+</script>
+
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/themes/Divi/js/scripts.min.js?ver=4.11.1' id='divi-custom-script-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.11.1' id='fitvids-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/themes/Divi/core/admin/js/common.js?ver=4.11.1' id='et-core-common-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-includes/js/hoverIntent.min.js?ver=1.10.1' id='hoverIntent-js'></script>
+
+<script type='text/javascript' id='megamenu-js-extra'>
+    /* <![CDATA[ */
+    var megamenu = {"timeout":"300","interval":"100"};
+    /* ]]> */
+</script>
+
+<script type='text/javascript' src='https://www.herbalist.ml/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=2.9.4' id='megamenu-js'></script>
+<script type='text/javascript' src='https://www.herbalist.ml/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/61702d8df7c0440a591f2df4/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>
