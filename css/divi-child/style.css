@@ -1724,7 +1724,7 @@ body .shop-list-location .owl-carousel.shop-image img {
     transition: all 0.3s ease-in-out;
     outline: none;
     display: inline-block;
-    background-color: black;
+    background-color: transparent;
     border-radius: 25px;
     letter-spacing: 0.12px;
     padding: 12px 0;
