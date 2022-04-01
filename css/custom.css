@@ -56,3 +56,9 @@ img.wp-image-16 {
 .cs-sold-out{
     color: red;
 }
+
+p.custom-btn-comprar a {
+    background-color: #ff000000 !important;
+    color: black !important;
+    border: solid 1px !important;
+}
