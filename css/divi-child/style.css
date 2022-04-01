@@ -1758,7 +1758,7 @@ body .shop-list-location .owl-carousel.shop-image img {
 }
 .btn--black {
     color: white;
-    border: 1px solid transparent;
+    border: 1px solid white;
 }
 .btn--black:hover {
     color: black;
