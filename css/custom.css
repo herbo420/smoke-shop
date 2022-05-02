@@ -20,7 +20,7 @@ img.wp-image-16 {
 }
 
 .et_pb_blurb_description{
-   /* display: none !important;*/
+    /* display: none !important;*/
 }
 
 .et_pb_section.et_pb_section_3_tb_header.header-bar.et_pb_with_background.et_section_regular {
@@ -42,9 +42,9 @@ img.wp-image-16 {
 
 @media only screen and (max-width: 620px) {
 
-.feature-slider {
-    background-size: cover;
-}
+    .feature-slider {
+        background-size: cover;
+    }
 
 
     .paypal-form{
@@ -62,8 +62,11 @@ p.custom-btn-comprar a {
     border: solid 1px !important;
 }
 
-h2.custom-slider-text.herbalist-kit {
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
+
+@media only screen and (max-width: 620px) {
+    h2.custom-slider-text.herbalist-kit {
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+    }
 }
