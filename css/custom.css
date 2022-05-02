@@ -62,10 +62,6 @@ p.custom-btn-comprar a {
     border: solid 1px !important;
 }
 
-h2.custom-slider-text {
-    text-shadow: 2px 2px #0000004f;
-}
-
 @media only screen and (max-width: 620px) {
     h2.custom-slider-text.herbalist-kit {
         font-size: 20px;
