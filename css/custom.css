@@ -61,12 +61,3 @@ p.custom-btn-comprar a {
     color: black !important;
     border: solid 1px !important;
 }
-
-@media only screen and (max-width: 620px) {
-    h2.custom-slider-text.herbalist-kit {
-        font-size: 20px;
-        line-height: 20px;
-        text-align: center;
-        text-shadow: none;
-    }
-}
