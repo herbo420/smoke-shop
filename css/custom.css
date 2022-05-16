@@ -61,3 +61,10 @@ p.custom-btn-comprar a {
     color: black !important;
     border: solid 1px !important;
 }
+
+
+@media only screen and (max-width: 980px){
+    .feature-slider {
+        min-height: 180px;
+    }
+}
