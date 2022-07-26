@@ -71,3 +71,8 @@ p.custom-btn-comprar a {
 }
 */
 
+
+a.more.btn.btn--black {
+    background-color: transparent;
+    border: solid 1px;
+}
